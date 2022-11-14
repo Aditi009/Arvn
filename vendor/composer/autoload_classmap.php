@@ -101,6 +101,7 @@ return array(
     'App\\Models\\GatewayCurrency' => $baseDir . '/app/Models/GatewayCurrency.php',
     'App\\Models\\GeneralSetting' => $baseDir . '/app/Models/GeneralSetting.php',
     'App\\Models\\Language' => $baseDir . '/app/Models/Language.php',
+    'App\\Models\\Option' => $baseDir . '/app/Models/Option.php',
     'App\\Models\\Page' => $baseDir . '/app/Models/Page.php',
     'App\\Models\\PasswordReset' => $baseDir . '/app/Models/PasswordReset.php',
     'App\\Models\\Plan' => $baseDir . '/app/Models/Plan.php',

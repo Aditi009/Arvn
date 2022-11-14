@@ -66,7 +66,9 @@ class ProcessController extends Controller
 
     public function ipn(Request $request)
     {
+        
         $track = Session::get('Track');
+       
         $data = Deposit::where('trx', $track)->orderBy('id', 'DESC')->first();
         $razorAcc = json_decode($data->gateway_currency()->gateway_parameter);
 

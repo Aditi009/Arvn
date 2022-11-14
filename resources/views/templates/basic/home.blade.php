@@ -1067,7 +1067,7 @@ $sliders = getContent('slider.element');
                                                             </ul>
                                                             
                                                         </div>
-                                                        <a href="http://" class="btn" style="background-color:#7FC6A4;color:white;width:100%;">BUY NOW</a>
+                                                        <a href="{{route('buy.plan' , ['id'=>$plan->id])}}" class="btn" style="background-color:#7FC6A4;color:white;width:100%;">BUY NOW</a>
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,1 +1,4 @@
-<img src="{{asset('assets/images/frontend/breadcrumb/5fc60b6f0b76e1606814575.jpg')}}" alt="dd">
+<form action="http://127.0.0.1:8000/ipn/razorpay" method="POST">
+                        <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_kiOtejPbRZU90E" data-amount="10000" data-currency="INR" data-order_id="order_KfZZqOvMBG6Jq4" data-buttontext="Pay with Razorpay" data-name="mlmhappy" data-description="Payment By Razorpay" data-image="http://127.0.0.1:8000/assets/images/logoIcon/logo.png" data-prefill.name="Happy Happy" data-prefill.email="seraj.dev@gmail.com" data-prefill.contact="919140327455" data-theme.color="#2ecc71">
+                        </script><input type="submit" value="Pay with Razorpay" class="razorpay-payment-button ml-4 mt-4 btn-custom2 text-center btn-lg">
+                        </form>

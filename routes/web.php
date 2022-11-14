@@ -396,6 +396,10 @@ Route::name('user.')->prefix('user')->group(function () {
             // Deposit
             Route::any('/deposit', 'Gateway\PaymentController@deposit')->name('deposit');
             Route::post('deposit/insert', 'Gateway\PaymentController@depositInsert')->name('deposit.insert');
+            Route::get('/kycdetail', 'Gateway\PaymentController@kycdetails')->name('kycdetail');
+            Route::post('/addkyc', 'Gateway\PaymentController@addkyc')->name('addkyc');
+            Route::post('/addshiping', 'Gateway\PaymentController@addshiping')->name('addshiping');
+            Route::get('/shipping', 'Gateway\PaymentController@shipping')->name('shipping');
             Route::get('deposit/preview', 'Gateway\PaymentController@depositPreview')->name('deposit.preview');
             Route::get('deposit/confirm', 'Gateway\PaymentController@depositConfirm')->name('deposit.confirm');
             Route::get('deposit/manual', 'Gateway\PaymentController@manualDepositConfirm')->name('deposit.manual.confirm');

@@ -717,6 +717,7 @@ class ComposerStaticInit358460cb67f42f0ebe130a7a4e2d30e3
         'App\\Models\\GatewayCurrency' => __DIR__ . '/../..' . '/app/Models/GatewayCurrency.php',
         'App\\Models\\GeneralSetting' => __DIR__ . '/../..' . '/app/Models/GeneralSetting.php',
         'App\\Models\\Language' => __DIR__ . '/../..' . '/app/Models/Language.php',
+        'App\\Models\\Option' => __DIR__ . '/../..' . '/app/Models/Option.php',
         'App\\Models\\Page' => __DIR__ . '/../..' . '/app/Models/Page.php',
         'App\\Models\\PasswordReset' => __DIR__ . '/../..' . '/app/Models/PasswordReset.php',
         'App\\Models\\Plan' => __DIR__ . '/../..' . '/app/Models/Plan.php',

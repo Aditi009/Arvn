@@ -13,6 +13,7 @@ use App\Models\SupportAttachment;
 use App\Models\SupportMessage;
 use App\Models\SupportTicket;
 use App\Models\User;
+use App\Models\GatewayCurrency;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -265,9 +266,11 @@ class SiteController extends Controller
 
     public function getBuyPlan($id){
         $data['page_title'] = "Buy Plan";
-
+        $gatewayCurrency = GatewayCurrency::whereHas('method', function ($gate) {
+            $gate->where('status', 1);
+        })->with('method')->orderby('method_code')->first();
         $data['products'] = Plan::where('id',$id)->with('getProduct','getProduct.getProductImages')->first();
-        return view(activeTemplate() . 'product', $data);
+        return view(activeTemplate() . 'product', $data)->with('data',$gatewayCurrency);
 
     }
 

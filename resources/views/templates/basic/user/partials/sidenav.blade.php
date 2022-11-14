@@ -51,10 +51,16 @@
                         <span class="menu-title">@lang('Binary Summery')</span>
                     </a>
                 </li>
-                <li class="sidebar-menu-item {{ menuActive('user.deposit') }}">
-                    <a href="{{ route('user.deposit') }}" class="nav-link">
+                <li class="sidebar-menu-item {{ menuActive('user.kycdetail') }}">
+                    <a href="{{ route('user.kycdetail') }}" class="nav-link">
                         <i class=" menu-icon las la-credit-card"></i>
                         <span class="menu-title">@lang('KYC Details')</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item {{ menuActive('user.shipping') }}">
+                    <a href="{{ route('user.shipping') }}" class="nav-link">
+                        <i class=" menu-icon las la-credit-card"></i>
+                        <span class="menu-title">@lang('Shipping Address')</span>
                     </a>
                 </li>
                 <li class="sidebar-menu-item {{ menuActive('user.deposit') }}">

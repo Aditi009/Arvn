@@ -244,15 +244,15 @@
                                 </div>
                                 <ul class="preview-thumbnail get-details nav nav-tabs">
                                     @foreach ($products->getProduct as $item)
-                                    <li class="active" data-id="{{$item->id}}"><a data-target="#pic-1" data-toggle="tab"><img src="{{asset('assets/images/product/'.$item->getProductImages[0]->image_url)}}"  title="{{$item->name}}"/></a></li>
+                                    <li class="active" data-id="{{$item}}"><a data-target="#pic-1" data-toggle="tab"><img src="{{asset('assets/images/product/'.$item->getProductImages[0]->image_url)}}"  title="{{$item->name}}"/></a></li>
                                     @endforeach
                                 </ul>
                                 
                             </div>
                             <div class="details col-md-6">
-                                <h3 class="product-title">men's shoes fashion</h3>
-                                <div class="rating">
-                                    <div class="stars">
+                                <h3 class="product-title"></h3>
+                                <div class="rating" hidden>
+                                    <div class="stars" hidden>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -262,18 +262,35 @@
                                     <span class="review-no">41 reviews</span>
                                 </div>
                                 <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
-                                <h4 class="price">current price: <span>$180</span></h4>
+                                <h4 class="price">current price: <span>{{number_format((float)$products->price, 2, '.', '')}}</span><span class="currency-addon addon">{{$general->cur_text}}</span></h4>
                                 <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                            <form action="{{route('user.deposit.insert')}}" method="post">
                                 <h5 class="sizes">sizes:
-                                    <span class="size" data-toggle="tooltip" title="small">s</span>
-                                    <span class="size" data-toggle="tooltip" title="medium">m</span>
-                                    <span class="size" data-toggle="tooltip" title="large">l</span>
-                                    <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+                                   <input class="form-control" placeholder="Enter size" type="text" name="size" />
                                 </h5>
 
                                 <div class="action">
-                                    <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-                                    <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                                
+                    @csrf
+                        <h4 class="text-danger depositLimit"></h4>
+                        <h4 class="text-danger depositCharge"></h4>
+                        <div class="form-group">
+                            <input type="hidden" name="currency" class="edit-currency" value="{{$data->currency}}">
+                            <input type="hidden" name="method_code" class="edit-method-code" value="{{$data->method_code}}">
+                        </div>
+                        <div class="form-group">
+                            <label>@lang('Amount to pay'):</label>
+                            <div class="input-group">
+                                <input id="amount" type="text" class="form-control form-control-lg" value="{{number_format((float)$products->price, 2, '.', '')}}" name="amount" placeholder="0.00" readonly>
+                                <div class="input-group-append">
+                                    <span class="input-group-text currency-addon addon">{{$general->cur_text}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                                    <button class="add-to-cart btn btn-default" type="submit">Buy Now</button>
+                                   </form>
                                 </div>
                             </div>
                         </div>
@@ -285,8 +302,12 @@
 <script>
 $( document ).ready(function() {
    $('.get-details').on('click','li',function(){
-    const product_id = $(this).attr('data-id');
-  
+    const data = $(this).attr('data-id');
+    const product = JSON.parse(data);
+
+    $('.product-title').html(product.name);
+    $('.product-description').html(product.desc);
+    console.log(product);
    })
  })
 </script>

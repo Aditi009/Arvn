@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Mail;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+use App\Models\Option;
 use Carbon\Carbon;
 
 
@@ -1180,4 +1181,24 @@ function displayRating($val)
         $result .= '<i class="lar la-star text--warning"></i>';
     }
     return $result;
+}
+
+//manage options table
+function setOrUpdateOption($user_id , $key , $value)
+{
+    $is_exist =Option::where(['user_id'=>$user_id,'key'=>$key])->first();
+
+    if(!$is_exist){
+        $is_exist = new Option();
+    }
+    $is_exist->key = $key;
+    $is_exist->user_id = $user_id;
+    $is_exist->value = $value;
+    return $is_exist->save();
+}
+function getOption($user_id=0 , $key)
+{
+    $is_exist =Option::where(['user_id'=>$user_id,'key'=>$key])->first();
+    
+    return $is_exist ? $is_exist->value : '';
 }

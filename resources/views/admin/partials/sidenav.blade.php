@@ -340,7 +340,7 @@
                     </a>
                 </li>
 
-                <!-- <li class="sidebar-menu-item {{menuActive('admin.setting.logo_icon')}}">
+             <li class="sidebar-menu-item {{menuActive('admin.setting.logo_icon')}}">
                     <a href="{{route('admin.setting.logo_icon')}}" class="nav-link">
                         <i class="menu-icon las la-images"></i>
                         <span class="menu-title">@lang('Logo Icon Setting')</span>

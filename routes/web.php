@@ -132,7 +132,10 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 
         //review
         Route::get('review', 'MlmController@review')->name('review');
+        Route::get('review/delete/{id}', 'MlmController@reviewDelete')->name('review.delete');
         Route::post('review/store', 'MlmController@reviewStore')->name('review.store');
+        Route::get('review/approved/{id}', 'MlmController@reviewApprove')->name('review.approved');
+        Route::get('review/disapproved/{id}', 'MlmController@reviewDisapprove')->name('review.disapproved');
 
         // matching bonus
         Route::post('matching-bonus/update', 'MlmController@matchingUpdate')->name('matching-bonus.update');
@@ -436,6 +439,7 @@ Route::get('/about', 'SiteController@about')->name('about');
 Route::get('/ourservices', 'SiteController@ourServices')->name('ourservices');
 
 Route::get('/buy-plan/{id}','SiteController@getBuyPlan')->name('buy.plan');
+Route::post('store-rating','SiteController@storeRating')->name('store.rating');
 Route::post('/contact', 'SiteController@contactSubmit')->name('contact.send');
 Route::get('/change/{lang?}', 'SiteController@changeLanguage')->name('lang');
 

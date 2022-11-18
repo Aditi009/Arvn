@@ -37,6 +37,12 @@
 
 
 
+                <li class="sidebar-menu-item {{menuActive('admin.Review*')}}">
+                    <a href="{{route('admin.review')}}" class="nav-link ">
+                        <i class="menu-icon las la-paper-plane"></i>
+                        <span class="menu-title">Review</span>
+                    </a>
+                </li>
 
                 <li class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="{{menuActive('admin.users*',3)}}">
@@ -340,6 +346,13 @@
                     </a>
                 </li>
 
+                <li class="sidebar-menu-item {{menuActive('admin.banner*')}}">
+                    <a href="{{route('admin.banner')}}" class="nav-link ">
+                        <i class="menu-icon las la-paper-plane"></i>
+                        <span class="menu-title">Banner</span>
+                    </a>
+                </li>
+
              <li class="sidebar-menu-item {{menuActive('admin.setting.logo_icon')}}">
                     <a href="{{route('admin.setting.logo_icon')}}" class="nav-link">
                         <i class="menu-icon las la-images"></i>
@@ -385,7 +398,7 @@
                         <i class="menu-icon las la-language"></i>
                         <span class="menu-title">@lang('Language') </span>
                     </a>
-                </li> -->
+                </li> 
 
                 <li class="sidebar-menu-item {{menuActive('admin.seo')}}">
                     <a href="{{route('admin.seo')}}" class="nav-link">

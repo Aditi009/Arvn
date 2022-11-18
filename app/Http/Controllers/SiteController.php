@@ -14,6 +14,9 @@ use App\Models\SupportMessage;
 use App\Models\SupportTicket;
 use App\Models\User;
 use App\Models\GatewayCurrency;
+use App\Models\Review;
+use Auth;
+
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -264,12 +267,33 @@ class SiteController extends Controller
         return view(activeTemplate() . 'terms', $data);
     }
 
+    public function storeRating(Request $req){
+
+        $reviewM = Review::where('user_id',Auth::user()->id)->first();
+        if($reviewM){
+            $notify[] = ['error', 'Review & Rating already added!'];
+            return back()->withNotify($notify);
+        }
+        $review = new Review();
+        $review->plan_id = $req->plan_id;
+        $review->user_id = Auth::user()->id;
+        $review->rating = $req->range;
+        $review->review = $req->review;
+        if($review->save()){
+            $notify[] = ['success', 'Review & Rating added successfully!'];
+            return back()->withNotify($notify);
+        }
+    }
+
+
     public function getBuyPlan($id){
         $data['page_title'] = "Buy Plan";
         $gatewayCurrency = GatewayCurrency::whereHas('method', function ($gate) {
             $gate->where('status', 1);
         })->with('method')->orderby('method_code')->first();
         $data['products'] = Plan::where('id',$id)->with('getProduct','getProduct.getProductImages')->first();
+        $data['plan_id']  = $id;
+        $data['reviews'] = Review::where('plan_id',$id)->get();
         return view(activeTemplate() . 'product', $data)->with('data',$gatewayCurrency);
 
     }

@@ -11,6 +11,7 @@ use App\Models\ProductImages;
 use Image;
 use Illuminate\Http\Request;
 use App\Models\Frontend;
+use App\Models\Review;
 
 class MlmController extends Controller
 {
@@ -41,12 +42,38 @@ class MlmController extends Controller
 
     public function review()
     {
-        $page_title = 'MLM Product';
-        $empty_message = 'No Product found';
-        $products = Product::paginate(getPaginate());;
+        $page_title = 'MLM Review';
+        $empty_message = 'No Review found';
+        $products = Review::paginate(getPaginate());
         $plans = Plan::all();
-        return view('admin.product.index', compact('page_title', 'products', 'empty_message','plans'));
+        return view('admin.review.index', compact('page_title', 'products', 'empty_message','plans'));
     }
+
+   
+    public function reviewApprove(Request $request,$id){
+        $review = Review::where('id',$id)->first();
+        $review->approved = 1;
+        if($review->save()){
+            $notify[] = ['success', 'Review Approved successfully'];
+        }else{
+            $notify[] = ['errors', 'Error Found'];
+        }
+        return back()->withNotify($notify);
+    }
+    
+
+    public function reviewDisapprove(Request $request,$id){
+        $review = Review::where('id',$id)->first();
+        $review->approved = 0;
+        if($review->save()){
+            $notify[] = ['success', 'Review Disapproved successfully'];
+        }else{
+            $notify[] = ['errors', 'Error Found'];
+        }
+        return back()->withNotify($notify);
+    }
+    
+
 
     public function planStore(Request $request)
     {
@@ -143,6 +170,16 @@ class MlmController extends Controller
         }
         return back()->withNotify($notify);
     }
+    public function reviewDelete(Request $request,$id){
+        $review = Review::where('id',$id)->first();
+        if($review->delete()){
+            $notify[] = ['success', 'Review deleted successfully'];
+        }else{
+            $notify[] = ['errors', 'Error Found'];
+        }
+        return back()->withNotify($notify);
+    }
+    
 
     public function bannerDelete(Request $request,$id){
         $products = Frontend::where('id',$id)->first();

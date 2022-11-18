@@ -1,7 +1,106 @@
 @extends('admin.layouts.app')
 
 @section('panel')
+<style>
+    .rating {
+        --dir: right;
+        --fill: gold;
+        --fillbg: rgba(100, 100, 100, 0.15);
+        --heart: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.328l-1.453-1.313q-2.484-2.25-3.609-3.328t-2.508-2.672-1.898-2.883-0.516-2.648q0-2.297 1.57-3.891t3.914-1.594q2.719 0 4.5 2.109 1.781-2.109 4.5-2.109 2.344 0 3.914 1.594t1.57 3.891q0 1.828-1.219 3.797t-2.648 3.422-4.664 4.359z"/></svg>');
+        --star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
+        --stars: 5;
+        --starsize: 1rem;
+        --symbol: var(--star);
+        --value: 1;
+        --w: calc(var(--stars) * var(--starsize));
+        --x: calc(100% * (var(--value) / var(--stars)));
+        block-size: var(--starsize);
+        inline-size: var(--w);
+        position: relative;
+        touch-action: manipulation;
+        -webkit-appearance: none;
+    }
 
+    [dir="rtl"] .rating {
+        --dir: left;
+    }
+
+    .rating::-moz-range-track {
+        background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+        block-size: 100%;
+        mask: repeat left center/var(--starsize) var(--symbol);
+    }
+
+    .rating-heading{
+        text-align: center;
+    }
+    .rating::-webkit-slider-runnable-track {
+        background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+        block-size: 100%;
+        mask: repeat left center/var(--starsize) var(--symbol);
+        -webkit-mask: repeat left center/var(--starsize) var(--symbol);
+    }
+
+    .rating::-moz-range-thumb {
+        height: var(--starsize);
+        opacity: 0;
+        width: var(--starsize);
+    }
+
+    .rating::-webkit-slider-thumb {
+        height: var(--starsize);
+        opacity: 0;
+        width: var(--starsize);
+        -webkit-appearance: none;
+    }
+
+    .rating,
+    .rating-label {
+        display: block;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+
+    .rating{
+        border: 0px !important;
+        background: transparent !important;
+    }
+    .rating-label {
+        margin-block-end: 1rem;
+    }
+
+    /* NO JS */
+    .rating--nojs::-moz-range-track {
+        background: var(--fillbg);
+    }
+
+    .rating--nojs::-moz-range-progress {
+        background: var(--fill);
+        block-size: 100%;
+        mask: repeat left center/var(--starsize) var(--star);
+    }
+
+    .rating--nojs::-webkit-slider-runnable-track {
+        background: var(--fillbg);
+    }
+
+    .rating-form{
+        padding: 16px;
+        border: 1px solid lightgrey;
+    }
+    .rating--nojs::-webkit-slider-thumb {
+        background-color: var(--fill);
+        box-shadow: calc(0rem - var(--w)) 0 0 var(--w) var(--fill);
+        opacity: 1;
+        width: 1px;
+    }
+    .red{
+        background: red;
+    }
+
+    [dir="rtl"] .rating--nojs::-webkit-slider-thumb {
+        box-shadow: var(--w) 0 0 var(--w) var(--fill);
+    }
+</style>
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -9,11 +108,12 @@
                     <div class="table-responsive--md table-responsive">
                         <table class="table table--light style--two">
                             <thead>
+                               
                             <tr>
                                 <th scope="col">@lang('Sl')</th>
-                                <th scope="col">@lang('Name')</th>
-                                <th scope="col">@lang('Size')</th>
-                                <th scope="col">@lang('Description')</th>
+                                <th scope="col">Rating</th>
+                                <th scope="col">Review</th>
+                                <th scope="col">Approved</th>
                                 <th scope="col">@lang('Action')</th>
                             </tr>
                             </thead>
@@ -21,21 +121,32 @@
                             @forelse($products as $key => $plan)
                                 <tr>
                                     <td data-label="@lang('Sl')">{{$key+1}}</td>
-                                    <td data-label="@lang('Bv')">{{ $plan->name }}</td>
-                                    <td data-label="@lang('Bv')">{{ $plan->size }}</td>
-                                    <td data-label="@lang('Bv')">{{ $plan->desc }}</td>
+                                    <td data-label="@lang('Bv')">
+                                        <input class="rating rating--nojs" max="5" step="1" type="range"
+                                        value="{{$plan->rating}}" readonly style="padding:0" name="range">
+                                    </td>
+                                    <td data-label="@lang('Bv')">{{ $plan->review }}</td>
+                                    <td>
+                                    @if($plan->approved)
+                                    <a href="{{ route('admin.review.disapproved', $plan->id) }}" class="icon-btn ml-1 red" data-toggle="tooltip" data-original-title="@lang('Dispprove')">
+                                        Disapprove
+                                    </a>
+                                    @else
+                                    <a href="{{ route('admin.review.approved', $plan->id) }}" class="icon-btn ml-1" data-toggle="tooltip" data-original-title="@lang('Approve')">
+                                        Approve
+                                    </a>
+                                    
+                                    @endif
+                                </td>
 
                                     {{-- <td data-label="@lang('Referral Commission')"> {{ getAmount($plan->ref_com) }} {{$general->cur_text}}</td> --}}
 
                                     <td data-label="@lang('Action')">
-                                        <a href="{{ route('admin.product.edit', $plan->id) }}" class="icon-btn" data-toggle="tooltip" data-original-title="@lang('Details')">
-                                            <i class="la la-pencil text--shadow"></i>
-                                        </a>
-                                        <a href="{{ route('admin.product.delete', $plan->id) }}" class="icon-btn ml-1" data-toggle="tooltip" data-original-title="@lang('Details')">
+                
+                                        <a href="{{ route('admin.review.delete', $plan->id) }}" class="icon-btn ml-1" data-toggle="tooltip" data-original-title="@lang('Details')">
                                             <i class="la la-trash text--shadow"></i>
                                         </a>
                                     </td>
-                                </tr>
                                 </tr>
                             @empty
                                 <tr>
@@ -194,7 +305,7 @@
 
 
 @push('breadcrumb-plugins')
-    <a href="javascript:void(0)" class="btn btn-sm btn--success add-plan"><i class="fa fa-fw fa-plus"></i>@lang('Add New')</a>
+    {{-- <a href="javascript:void(0)" class="btn btn-sm btn--success add-plan"><i class="fa fa-fw fa-plus"></i>@lang('Add New')</a> --}}
 
 @endpush
 

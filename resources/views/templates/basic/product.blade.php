@@ -410,6 +410,9 @@
                 mask: repeat left center/var(--starsize) var(--symbol);
             }
 
+            .rating-heading{
+                text-align: center;
+            }
             .rating::-webkit-slider-runnable-track {
                 background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
                 block-size: 100%;
@@ -436,6 +439,10 @@
                 font-family: ui-sans-serif, system-ui, sans-serif;
             }
 
+            .rating{
+                border: 0px !important;
+                background: transparent !important;
+            }
             .rating-label {
                 margin-block-end: 1rem;
             }
@@ -455,6 +462,10 @@
                 background: var(--fillbg);
             }
 
+            .rating-form{
+                padding: 16px;
+                border: 1px solid lightgrey;
+            }
             .rating--nojs::-webkit-slider-thumb {
                 background-color: var(--fill);
                 box-shadow: calc(0rem - var(--w)) 0 0 var(--w) var(--fill);
@@ -467,20 +478,38 @@
             }
         </style>
         <section>
-            <div class="container">
+            <div class="container pb-5">
                 <div>
+                    <h2 class="rating-heading">Rating & Reviews</h2>
                     <div class="row">
-                        <div class="col-md-8"></div>
-                        <div class="col-md-4">
+                        <div class="col-md-8">
+                            @foreach($reviews as $review)
+                            <input class="rating rating--nojs" max="5" step="1" type="range"
+                            value="{{$review->rating}}" style="padding:0" readonly name="range">
+                           @php
+                              $name = \App\Models\User::find($review->user_id); 
+                           @endphp
+                            <p style="font-weight: 900">{{$name?$name->firstname .' '.$name->lastname : '' }}</p>
+                            <p>{{$review->review}}</p>
+                            @endforeach
+                        </div>
+                        <div class="col-md-4 rating-form">
                             @guest
                                 <h4>Login to review</h4>
                             @else
+                            <form method="POST" action="{{ route('store.rating') }}" >
+                                @csrf
+                                <input value="{{$plan_id}}" type="hidden" name="plan_id">
                                 <div class="container">
-                                    <label class="rating-label"><strong>No JS, using <code>box-shadow</code></strong>
+                                    <label class="rating-label">Rating
                                         <input class="rating rating--nojs" max="5" step="1" type="range"
-                                            value="3">
+                                            value="3" style="padding:0" name="range">
                                     </label>
+                                    <label>Feedback</label>
+                                    <textarea class="form-control" name="review"></textarea>
+                                    <button class="btn btn-default mt-2" type="submit">Save</button>
                                 </div>
+                            </form>
                             @endguest
 
 
@@ -503,4 +532,38 @@
             })
         })
     </script>
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/iziToast.min.css') }}">
+    <script src="{{ asset('assets/admin/js/iziToast.min.js') }}"></script>
+    
+    @if(session()->has('notify'))
+        @foreach(session('notify') as $msg)
+            <script>
+                'use strict';
+                iziToast.{{ $msg[0] }}({message:"{{ $msg[1] }}", position: "topRight"});
+            </script>
+        @endforeach
+    @endif
+    
+    @if ($errors->any())
+        <script>
+            'use strict';
+            @foreach ($errors->all() as $error)
+            iziToast.error({
+                message: '{{ $error }}',
+                position: "topRight"
+            });
+            @endforeach
+        </script>
+    
+    @endif
+    <script>
+        'use strict';
+        function notify(status,message) {
+            iziToast[status]({
+                message: message,
+                position: "topRight"
+            });
+        }
+    </script>
+    
 @endsection

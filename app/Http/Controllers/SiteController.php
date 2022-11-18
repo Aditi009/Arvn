@@ -274,5 +274,32 @@ class SiteController extends Controller
 
     }
 
+    public function productBermuda()
+    {
+        $data['page_title'] = "Bermuda";
+        $data['bermuda'] = Frontend::where('data_keys', 'bermuda.content')->first();
+        return view($this->activeTemplate . 'bermuda', $data);   
+    }
+
+    public function productLonge()
+    {
+        $data['page_title'] = "Longe";
+        $data['longe'] = Frontend::where('data_keys', 'longe.content')->first();
+        return view($this->activeTemplate . 'longe', $data);   
+    }
+
+    public function productShorts()
+    {
+        $data['page_title'] = "Shorts";
+        $data['shorts'] = Frontend::where('data_keys', 'shorts.content')->first();
+        return view($this->activeTemplate . 'shorts', $data);   
+    }
+
+    public function productJoggers()
+    {
+        $data['page_title'] = "Joggers";
+        $data['joggers'] = Frontend::where('data_keys', 'joggers.content')->first();
+        return view($this->activeTemplate . 'joggers', $data);   
+    }
 
 }

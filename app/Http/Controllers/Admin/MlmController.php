@@ -10,6 +10,7 @@ use App\Models\Product;
 use App\Models\ProductImages;
 use Image;
 use Illuminate\Http\Request;
+use App\Models\Frontend;
 
 class MlmController extends Controller
 {
@@ -22,6 +23,23 @@ class MlmController extends Controller
     }
 
     public function product()
+    {
+        $page_title = 'MLM Product';
+        $empty_message = 'No Product found';
+        $products = Product::paginate(getPaginate());;
+        $plans = Plan::all();
+        return view('admin.product.index', compact('page_title', 'products', 'empty_message','plans'));
+    }
+
+    public function banner()
+    {
+        $page_title = 'New Arrival Banner';
+        $empty_message = 'No Banner found';
+        $products = Frontend::where('data_keys','new_arrival_banner')->get();
+        return view('admin.new_arrival_banner.index', compact('page_title', 'products', 'empty_message'));
+    }
+
+    public function review()
     {
         $page_title = 'MLM Product';
         $empty_message = 'No Product found';
@@ -51,6 +69,30 @@ class MlmController extends Controller
         $plan->save();
 
         $notify[] = ['success', 'New Plan created successfully'];
+        return back()->withNotify($notify);
+    }
+    public function bannerStore(Request $request)
+    {
+        try {
+        if ($request->hasFile('file')) {
+            $filename = time() . '_' . 'banner' . '.jpg';
+            $location = 'assets/images/product/' . $filename;   
+            $image = $request->file('file');
+            $image = Image::make($image);
+            $image->save($location);
+
+            $frontend = new Frontend();
+            $frontend->data_keys = 'new_arrival_banner';
+            $frontend->data_values = $filename;
+            $frontend->save();
+       
+        }
+        }catch (\Exception $exp) {
+            $notify[] = ['error', 'Could not upload your ' . $image];
+            return back()->withNotify($notify)->withInput();
+        }
+
+        $notify[] = ['success', 'New image added successfully'];
         return back()->withNotify($notify);
     }
 
@@ -102,11 +144,20 @@ class MlmController extends Controller
         return back()->withNotify($notify);
     }
 
+    public function bannerDelete(Request $request,$id){
+        $products = Frontend::where('id',$id)->first();
+        if($products->delete()){
+            $notify[] = ['success', 'Banner deleted successfully'];
+        }else{
+            $notify[] = ['errors', 'Error Found'];
+        }
+        return back()->withNotify($notify);
+    }
+
     public function productUpdate(Request $request){
         $this->validate($request, [
             'id'                => 'required',
             'name'              => 'required',
-            
         ]);
 
         $plan                   = Product::find($request->id);

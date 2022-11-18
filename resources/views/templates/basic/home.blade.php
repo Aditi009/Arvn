@@ -47,74 +47,7 @@ $sliders = getContent('slider.element');
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c46eab4"
                 data-id="c46eab4" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-45a2db2 animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
-                        data-id="45a2db2" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:80}"
-                        data-widget_type="jkit_heading.default">
-                        <div class="elementor-widget-container">
-                            <div
-                                class="jeg-elementor-kit jkit-heading  align-left align-tablet-left align-mobile-left jeg_module_17_1_635d0b10e0175">
-                                <div class="heading-section-title ">
-                                    <h5 class="heading-title">Since 2005</h5>
-                                </div>
-                                <div class="heading-section-separator">
-                                    <div class="separator-wrapper style-solid"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-4460e30 animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
-                        data-id="4460e30" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                        data-widget_type="jkit_heading.default">
-                        <div class="elementor-widget-container">
-                            <div
-                                class="jeg-elementor-kit jkit-heading  align-left align-tablet-left align-mobile-left jeg_module_17_2_635d0b10e5104">
-                                <div class="heading-section-title ">
-                                    <h1 class="heading-title">Textilery Creating The Best <span
-                                            class="style-color"><span>Textile </span></span> Solutions</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-40e4c9e animated-slow elementor-invisible elementor-widget elementor-widget-text-editor"
-                        data-id="40e4c9e" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}"
-                        data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-e74b04e animated-slow elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-jkit_video_button"
-                        data-id="e74b04e" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;,&quot;_animation_delay&quot;:10}"
-                        data-widget_type="jkit_video_button.default">
-                        <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-video-button jeg_module_17_3_635d0b10ed1d7"
-                                data-autoplay="0" data-loop="0" data-controls="0" data-type="youtube" data-start="0"
-                                data-end="0"><a href="https://www.youtube.com/watch?v=MLpWrANjFbI"
-                                    class="jkit-video-popup-btn glow-enable"><span class="icon-position-before"><i
-                                            aria-hidden="true" class="jki jki-play-button-light"></i></span></a></div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-20a83f2 elementor-align-right elementor-widget__width-auto animated-slow elementor-invisible elementor-widget elementor-widget-button"
-                        data-id="20a83f2" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;,&quot;_animation_delay&quot;:10}"
-                        data-widget_type="button.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-button-wrapper">
-                                <a href="#" class="elementor-button-link elementor-button elementor-size-sm"
-                                    role="button">
-                                    <span class="elementor-button-content-wrapper">
-                                        <span class="elementor-button-text">Watch Video</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- slider text removed-->
             </div>
             <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c290160"
                 data-id="c290160" data-element_type="column">
@@ -124,152 +57,27 @@ $sliders = getContent('slider.element');
         </div>
     </section>
     <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-d89450e elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="d89450e" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-15c3ef2"
-                data-id="15c3ef2" data-element_type="column">
+        class="elementor-section elementor-inner-section elementor-element elementor-element-d695775 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="d695775" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-no">
+            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-05c5009"
+                data-id="05c5009" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-9f41a6a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="9f41a6a" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3912c76"
-                                data-id="3912c76" data-element_type="column">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-193fe77 elementor-widget-tablet__width-auto jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                                        data-id="193fe77" data-element_type="widget"
-                                        data-widget_type="jkit_icon_box.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_17_4_635d0b1103af2">
-                                                <div class="jkit-icon-box-wrapper hover-from-left">
-                                                    <div class="icon-box icon-box-header elementor-animation-">
-                                                        <div class="icon style-color"><i aria-hidden="true"
-                                                                class="jki jki-map-marker1-light"></i></div>
-                                                    </div>
-                                                    <div class="icon-box icon-box-body">
-                                                        <h3 class="title">Location</h3>
-                                                        <p class="icon-box-description"> Jl. Sunset Road No.815, Kuta
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7cb550b"
-                                data-id="7cb550b" data-element_type="column">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-c507dd4 elementor-widget-tablet__width-auto jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                                        data-id="c507dd4" data-element_type="widget"
-                                        data-widget_type="jkit_icon_box.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_17_5_635d0b110a19e">
-                                                <div class="jkit-icon-box-wrapper hover-from-left">
-                                                    <div class="icon-box icon-box-header elementor-animation-">
-                                                        <div class="icon style-color"><i aria-hidden="true"
-                                                                class="jki jki-email-light"></i></div>
-                                                    </div>
-                                                    <div class="icon-box icon-box-body">
-                                                        <h3 class="title">Email</h3>
-                                                        <p class="icon-box-description"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                                data-cfemail="4a393f3a3a25383e0a2e25272b232464292527">[email&#160;protected]</a>
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9382965"
-                data-id="9382965" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-e37db16 animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-                        data-id="e37db16" data-element_type="section"
-                        data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                        <div class="elementor-container elementor-column-gap-default">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ec43213"
-                                data-id="ec43213" data-element_type="column"
-                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-912ca13 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                                        data-id="912ca13" data-element_type="widget"
-                                        data-widget_type="jkit_icon_box.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_17_6_635d0b1111e3f">
-                                                <div class="jkit-icon-box-wrapper hover-from-left">
-                                                    <div class="icon-box icon-box-body">
-                                                        <h2 class="title">Quality Product</h2>
-                                                        <p class="icon-box-description">Lorem ipsum dolor sitatu amet
-                                                            consec teturarisa adipiscing elit samed.</p>
-                                                        <div class="icon-box-button ">
-                                                            <div class="btn-wrapper icon-position-after">
-                                                                <a href="#" class="icon-box-link">Read More<i
-                                                                        aria-hidden="true"
-                                                                        class="fas fa-arrow-right"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="hover-watermark">
-                                                        <i aria-hidden="true" class="jki jki-tshirt-light"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b960078"
-                                data-id="b960078" data-element_type="column"
-                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-6388929 elementor-widget elementor-widget-heading"
-                                        data-id="6388929" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">Project Overview
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-3183afd elementor-widget elementor-widget-jkit_fun_fact"
-                                        data-id="3183afd" data-element_type="widget"
-                                        data-widget_type="jkit_fun_fact.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-fun-fact align-center hover-from-left elementor-animation- jeg_module_17_7_635d0b111b307">
-                                                <div class="fun-fact-inner">
-                                                    <div class="content">
-                                                        <div class="number-wrapper">
-                                                            <span class="number" data-value="2476"
-                                                                data-animation-duration="3500">0</span>
-                                                        </div>
-                                                        <h3 class="title">Export Projects</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <div class="elementor-element elementor-element-6304f76 elementor-widget elementor-widget-text-editor intro-text"
+                        data-id="6304f76" data-element_type="widget"
+                        data-widget_type="text-editor.default">
+                        <p class="introduction-context">
+                            FOUNDED IN 2012 ARVIND ENTERPRISES. AARBIN INDIA PIONEERED MEN GARMENTS,
+                            EVOLVING AND INNOVATING NOT ONLY THE PRODUCT, BUT ALSO THE WAY IT HAS BEEN
+                            MARKETED OVER THE YEARS. THE COMPANY IS COMMITTED TO QUALITY, COMFORT,
+                            FASHION, INNOVATION AND VALUE HALLMARK. 
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-ae29a0e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="ae29a0e" data-element_type="section">
@@ -290,7 +98,7 @@ $sliders = getContent('slider.element');
                         <div class="elementor-widget-container">
                             <img src="{{asset('textilary/images/worker-working-in-fabric-industry-e1627088644946-pakcv60lh46g5ej6o5zdjdpojxcyv32m0a8s3s1ips.jpg')}}"
                                 title="Worker working in fabric industry" alt="Worker working in fabric industry">
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -330,34 +138,8 @@ $sliders = getContent('slider.element');
                         class="elementor-section elementor-inner-section elementor-element elementor-element-1da59c0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                         data-id="1da59c0" data-element_type="section">
                         <div class="elementor-container elementor-column-gap-no">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0df82bf"
-                                data-id="0df82bf" data-element_type="column"
-                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-7c3da0d elementor-widget elementor-widget-jkit_fun_fact"
-                                        data-id="7c3da0d" data-element_type="widget"
-                                        data-widget_type="jkit_fun_fact.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-fun-fact align-center hover-from-left elementor-animation- jeg_module_17_9_635d0b112ca5c">
-                                                <div class="fun-fact-inner">
-                                                    <div class="icon elementor-animation-"><i aria-hidden="true"
-                                                            class="jki jki-medal"></i></div>
-                                                    <div class="content">
-                                                        <div class="number-wrapper">
-                                                            <span class="number" data-value="16"
-                                                                data-animation-duration="3500">0</span>
-                                                            <sup class="super">+</sup>
-                                                        </div>
-                                                        <h2 class="title">Years Of Experiences</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b02c9b8"
+                            
+                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b02c9b8"
                                 data-id="b02c9b8" data-element_type="column">
                                 <div class="elementor-widget-wrap elementor-element-populated">
                                     <div class="elementor-element elementor-element-912c66b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
@@ -418,11 +200,7 @@ $sliders = getContent('slider.element');
                                         data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
                                         data-widget_type="image.default">
                                         <div class="elementor-widget-container">
-                                            <img width="320" height="320"
-                                                src="{{asset('textilary/images/team-MYBTWFF.jpg')}}"
-                                                class="attachment-full size-full" alt loading="lazy"
-                                                srcset="images/team-MYBTWFF.jpg 320w, images/team-MYBTWFF-300x300.jpg 300w, images/team-MYBTWFF-150x150.jpg 150w"
-                                                sizes="(max-width: 320px) 100vw, 320px">
+                                            
                                         </div>
                                     </div>
                                     <div class="elementor-element elementor-element-ff7e640 elementor-widget__width-auto elementor-widget elementor-widget-jkit_heading"
@@ -465,57 +243,311 @@ $sliders = getContent('slider.element');
             </div>
         </div>
     </section>
+    
     <section
-    class="elementor-section elementor-top-section elementor-element elementor-element-1dfe8f9 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-    data-id="1dfe8f9" data-element_type="section">
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b912c85"
-            data-id="b912c85" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-3dbb597 animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
-                    data-id="3dbb597" data-element_type="widget"
-                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                    data-widget_type="jkit_heading.default">
-                    <div class="elementor-widget-container">
-                        <div
-                            class="jeg-elementor-kit jkit-heading  align-center align-tablet-left align-mobile-left jeg_module_17_19_635d0b116a62d">
-                            <div class="heading-section-title ">
-                                <h5 class="heading-title">Our Products</h5>
+        class="elementor-section elementor-top-section elementor-element elementor-element-787cf53 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="787cf53" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-background-overlay"></div>
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bfc591"
+                data-id="7bfc591" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-c010a18 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="c010a18" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-1f8e964"
+                                data-id="1f8e964" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-8d4b1f3 elementor-widget elementor-widget-text-editor"
+                                        data-id="8d4b1f3" data-element_type="widget"
+                                        data-widget_type="text-editor.default">
+                                       
+                                    </div>
+                                    <div class="elementor-element elementor-element-50199ac elementor-align-left elementor-widget elementor-widget-button"
+                                        data-id="50199ac" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="heading-section-separator">
-                                <div class="separator-wrapper style-solid"></div>
+                            <div class="elementor-column elementor-col-60 elementor-inner-column elementor-element elementor-element-6b1f17a"
+                                data-id="6b1f17a" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-ed93e6d animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
+                                        data-id="ed93e6d" data-element_type="widget"
+                                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
+                                        data-widget_type="jkit_heading.default">
+                                        <div class="elementor-widget-container">
+                                            <div
+                                                class="jeg-elementor-kit jkit-heading  align-left align-tablet-left align-mobile-left jeg_module_17_11_635d0b1141042">
+                                                <div class="heading-section-title ">
+                                                    <h5 class="heading-title">Our Products</h5>
+                                                </div>
+                                                <div class="heading-section-separator">
+                                                    <div class="separator-wrapper style-solid"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-0d56c0a elementor-widget elementor-widget-heading"
+                                        data-id="0d56c0a" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h2 class="elementor-heading-title elementor-size-default">Delivering The
+                                                Highest Quality Products</h2>
+                                        </div>
+                                    </div>
+                                    
+
+
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-1f8e964"
+                                data-id="1f8e964" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-8d4b1f3 elementor-widget elementor-widget-text-editor"
+                                        data-id="8d4b1f3" data-element_type="widget"
+                                        data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-50199ac elementor-align-left elementor-widget elementor-widget-button"
+                                        data-id="50199ac" data-element_type="widget" data-widget_type="button.default">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-ff7981b elementor-section-content-bottom elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="ff7981b" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3aa5e30 animated-slow elementor-invisible"
+                                data-id="3aa5e30" data-element_type="column"
+                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:80}">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-9f88dc0 elementor-widget elementor-widget-jkit_team"
+                                        data-id="9f88dc0" data-element_type="widget"
+                                        data-widget_type="jkit_team.default">
+                                        <div class="elementor-widget-container">
+                                            <div
+                                                class="jeg-elementor-kit jkit-team style-overlay overlay-bottom jeg_module_17_23_635d0b1188908">
+                                                <div class="profile-card proile-card-image"><img
+                                                        src="{{url('assets/images/logoIcon/bermuda.jpg')}}"
+                                                        alt="BERMUDA">
+                                                 
+                                                    <div class="hover-area alignment-bottom">
+                                                    
+                                                        <div class="profile-body">
+                                                            <h2 class="profile-title" style="font-size:20px;">BERMUDA</h2>
+                                                            <p class="profile-designation"></p>
+                                                            <p class="profile-content  text-justify" style="font-size:11px;color:#cacfd9;">
+
+                                                                Trendy casuals having a new, current look made shockingly better 
+                                                                with breathable plan produced using merceried brushed cotton texture , 
+                                                                the product is fundamentally known as BERMUDA with ultrasoft and solid 
+                                                                internal belt alongside contrast channeling on the two sets.
+                                                                It is exceptionally agreeable and simple to wear.
+
+                                                            </p>
+                                                            <ul class="social-list"></ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3aa5e30 animated-slow elementor-invisible"
+                                data-id="3aa5e30" data-element_type="column"
+                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:80}">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-9f88dc0 elementor-widget elementor-widget-jkit_team"
+                                        data-id="9f88dc0" data-element_type="widget"
+                                        data-widget_type="jkit_team.default">
+                                        <div class="elementor-widget-container">
+                                            <div
+                                                class="jeg-elementor-kit jkit-team style-overlay overlay-bottom jeg_module_17_23_635d0b1188908">
+                                                <div class="profile-card proile-card-image"><img
+                                                        src="{{url('assets/images/logoIcon/longe.jpg')}}"
+                                                        alt="LONGE & ATHLEISURE">
+                                                 
+                                                    <div class="hover-area alignment-bottom">
+                                                    
+                                                        <div class="profile-body">
+                                                            <h2 class="profile-title product-card-description" style="font-size:20px;">LONGE & ATHLEISURE</h2>
+                                                            <p class="profile-designation"></p>
+                                                            <p class="profile-content  text-justify" style="font-size:11px;color:#cacfd9;">
+
+                                                                Lounge & Athleisure are in huge demand and proper sportswear helps the player to 
+                                                                perform all the tasks in the most efficient way, without having to strain themselves.
+                                                                Sportswear for Men come with so many accessories like training shoes, headbands, 
+                                                                wristbands, helmets which make it possible for them to play effectively without
+                                                                having the tension about harming any of the body parts.
+
+
+
+                                                            </p>
+                                                            <ul class="social-list"></ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3aa5e30 animated-slow elementor-invisible"
+                                data-id="3aa5e30" data-element_type="column"
+                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:80}">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-9f88dc0 elementor-widget elementor-widget-jkit_team"
+                                        data-id="9f88dc0" data-element_type="widget"
+                                        data-widget_type="jkit_team.default">
+                                        <div class="elementor-widget-container">
+                                            <div
+                                                class="jeg-elementor-kit jkit-team style-overlay overlay-bottom jeg_module_17_23_635d0b1188908">
+                                                <div class="profile-card proile-card-image"><img
+                                                        src="{{url('assets/images/logoIcon/shorts.jpg')}}"
+                                                        alt="SHORTS">
+                                                 
+                                                    <div class="hover-area alignment-bottom">
+                                                    
+                                                        <div class="profile-body">
+                                                            <h2 class="profile-title" style="font-size:20px;">SHORTS</h2>
+                                                            <p class="profile-designation"></p>
+                                                            <p class="profile-content  text-justify" style="font-size:11px;color:#cacfd9;">
+
+                                                                Men's shorts have a clear history of being a fighter's clothing to a school children's
+                                                                uniform. Today, they are depicted as a man's quintessential design decision by numerous
+                                                                shorts internet shopping locales.
+
+
+                                                            </p>
+                                                            <ul class="social-list"></ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3aa5e30 animated-slow elementor-invisible"
+                                data-id="3aa5e30" data-element_type="column"
+                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:80}">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-9f88dc0 elementor-widget elementor-widget-jkit_team"
+                                        data-id="9f88dc0" data-element_type="widget"
+                                        data-widget_type="jkit_team.default">
+                                        <div class="elementor-widget-container">
+                                            <div
+                                                class="jeg-elementor-kit jkit-team style-overlay overlay-bottom jeg_module_17_23_635d0b1188908">
+                                                <div class="profile-card proile-card-image"><img
+                                                        src="{{url('assets/images/logoIcon/joggers.jpg')}}"
+                                                        alt="JOGGERS">
+                                                 
+                                                    <div class="hover-area alignment-bottom">
+                                                    
+                                                        <div class="profile-body">
+                                                            <h2 class="profile-title" style="font-size:20px;"">JOGGERS</h2>
+                                                            <p class="profile-designation"></p>
+                                                            <p class="profile-content  text-justify" style="font-size:11px;color:#cacfd9;">
+
+                                                                Aarbin India joggers are designed to provide best comfort. The Knitted fabric is soft,
+                                                                stretchable, and comfortable. You can laze at home in these joggers or break a sweat 
+                                                                at the gym; these versatile pants are ideal for modern men who prefer clothes that blend
+                                                                style and comfort.
+
+
+
+                                                            </p>
+                                                            <ul class="social-list"></ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-4ddc9b7 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
+        data-id="4ddc9b7" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default lower-banner">
+            
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element  elementor-hidden-phone"
+                data-id="97bf745" data-element_type="column"
+                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-background-overlay"></div>
+                    <div class="elementor-element elementor-element-4632253 elementor-widget elementor-widget-spacer"
+                        data-id="4632253" data-element_type="widget" data-widget_type="spacer.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
                             </div>
                         </div>
                     </div>
+                    BNN
                 </div>
-                <div class="elementor-element elementor-element-9a327f8 elementor-widget elementor-widget-heading"
-                    data-id="9a327f8" data-element_type="widget" data-widget_type="heading.default">
-                    <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title elementor-size-default">Our Packages
-                        </h2>
-                    </div>
-                </div>
-                <section
-                    class="elementor-section elementor-inner-section elementor-element elementor-element-d695775 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="d695775" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-05c5009"
-                            data-id="05c5009" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-6304f76 elementor-widget elementor-widget-text-editor"
-                                    data-id="6304f76" data-element_type="widget"
-                                    data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        FOUNDED IN 2012 ARVIND ENTERPRISES. AARBIN INDIA PIONEERED MEN GARMENTS,
-                                        EVOLVING AND INNOVATING NOT ONLY THE PRODUCT, BUT ALSO THE WAY IT HAS BEEN
-                                        MARKETED OVER THE YEARS. THE COMPANY IS COMMITTED TO QUALITY, COMFORT,
-                                        FASHION, INNOVATION AND VALUE HALLMARK. </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-1dfe8f9 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+        data-id="1dfe8f9" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b912c85"
+                data-id="b912c85" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-3dbb597 animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
+                        data-id="3dbb597" data-element_type="widget"
+                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                        data-widget_type="jkit_heading.default">
+                        <div class="elementor-widget-container">
+                            <div
+                                class="jeg-elementor-kit jkit-heading  align-center align-tablet-left align-mobile-left jeg_module_17_19_635d0b116a62d">
+                                <div class="heading-section-title ">
+                                    <h5 class="heading-title">Our Products</h5>
+                                </div>
+                                <div class="heading-section-separator">
+                                    <div class="separator-wrapper style-solid"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                @php
+                    <div class="elementor-element elementor-element-9a327f8 elementor-widget elementor-widget-heading"
+                        data-id="9a327f8" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default">Our Packages
+                            </h2>
+                        </div>
+                    </div>
+                    
+                   @php
 
                 $planTitle = getContent('mlmPlan.content', true);
                 $plans = \App\Models\Plan::where('status', 1)->get();
@@ -548,7 +580,7 @@ $sliders = getContent('slider.element');
                                                             {{getAmount($plan->price)}} {{$general->cur_text}}
                                                         </div>
                                                         <ul class="plan-card__features mt-4">
-                                                            <li> @lang('Incentive Points') (@lang('BV')) : <span
+                                                            <li> @lang('Incentive Points') (@lang('IP')) : <span
                                                                     class="amount">{{$plan->bv}}</span>
                                                                 <span class="icon float-right" data-toggle="modal"
                                                                     data-target="#exampleModal"><i
@@ -586,503 +618,11 @@ $sliders = getContent('slider.element');
                     </div>
                 </section>
 
-            </div>
-        </div>
-    </div>
-</section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-787cf53 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="787cf53" data-element_type="section"
-        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="elementor-background-overlay"></div>
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bfc591"
-                data-id="7bfc591" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-c010a18 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="c010a18" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6b1f17a"
-                                data-id="6b1f17a" data-element_type="column">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-ed93e6d animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
-                                        data-id="ed93e6d" data-element_type="widget"
-                                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
-                                        data-widget_type="jkit_heading.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-heading  align-left align-tablet-left align-mobile-left jeg_module_17_11_635d0b1141042">
-                                                <div class="heading-section-title ">
-                                                    <h5 class="heading-title">Our Services</h5>
-                                                </div>
-                                                <div class="heading-section-separator">
-                                                    <div class="separator-wrapper style-solid"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-0d56c0a elementor-widget elementor-widget-heading"
-                                        data-id="0d56c0a" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">Delivering The
-                                                Highest Quality Fabrics</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1f8e964"
-                                data-id="1f8e964" data-element_type="column">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-8d4b1f3 elementor-widget elementor-widget-text-editor"
-                                        data-id="8d4b1f3" data-element_type="widget"
-                                        data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-50199ac elementor-align-left elementor-widget elementor-widget-button"
-                                        data-id="50199ac" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a href="#"
-                                                    class="elementor-button-link elementor-button elementor-size-sm"
-                                                    role="button">
-                                                    <span class="elementor-button-content-wrapper">
-                                                        <span class="elementor-button-text">All Services</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-ff7981b elementor-section-content-bottom elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="ff7981b" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f1001df animated-slow elementor-invisible"
-                                data-id="f1001df" data-element_type="column"
-                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:40}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-4d2b1c8 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                                        data-id="4d2b1c8" data-element_type="widget"
-                                        data-widget_type="jkit_icon_box.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_17_12_635d0b114bb11">
-                                                <div class="jkit-icon-box-wrapper hover-from-bottom">
-                                                    <div class="icon-box icon-box-header elementor-animation-">
-                                                        <div class="icon style-color"><img
-                                                                src="{{asset('textilary/images/sew-T5LCRK.png')}}"
-                                                                alt="Fabric Dyeing"></div>
-                                                    </div>
-                                                    <div class="icon-box icon-box-body">
-                                                        <h3 class="title">Fabric Dyeing</h3>
-                                                        <p class="icon-box-description">Lorem ipsum dolor sit amet,
-                                                            consectet adipiscing elit, sed do eiusmod tempor incididunt
-                                                            ut labore et dolore </p>
-                                                        <div class="icon-box-button ">
-                                                            <div class="btn-wrapper icon-position-after">
-                                                                <a href class="icon-box-link">Read More<i
-                                                                        aria-hidden="true"
-                                                                        class="fas fa-arrow-right"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3aa5e30 animated-slow elementor-invisible"
-                                data-id="3aa5e30" data-element_type="column"
-                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:80}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-42a664a jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                                        data-id="42a664a" data-element_type="widget"
-                                        data-widget_type="jkit_icon_box.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_17_13_635d0b1151a7a">
-                                                <div class="jkit-icon-box-wrapper hover-from-bottom">
-                                                    <div class="icon-box icon-box-header elementor-animation-">
-                                                        <div class="icon style-color"><img
-                                                                src="{{asset('textilary/images/satin.png')}}"
-                                                                alt="Satin Weaving"></div>
-                                                    </div>
-                                                    <div class="icon-box icon-box-body">
-                                                        <h3 class="title">Satin Weaving</h3>
-                                                        <p class="icon-box-description">Lorem ipsum dolor sit amet,
-                                                            consectet adipiscing elit, sed do eiusmod tempor incididunt
-                                                            ut labore et dolore </p>
-                                                        <div class="icon-box-button ">
-                                                            <div class="btn-wrapper icon-position-after">
-                                                                <a href class="icon-box-link">Read More<i
-                                                                        aria-hidden="true"
-                                                                        class="fas fa-arrow-right"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-13faf5b animated-slow elementor-invisible"
-                                data-id="13faf5b" data-element_type="column"
-                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:120}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-5c92588 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                                        data-id="5c92588" data-element_type="widget"
-                                        data-widget_type="jkit_icon_box.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_17_14_635d0b1157d2f">
-                                                <div class="jkit-icon-box-wrapper hover-from-bottom">
-                                                    <div class="icon-box icon-box-header elementor-animation-">
-                                                        <div class="icon style-color"><img
-                                                                src="{{asset('textilary/images/digital.png')}}"
-                                                                alt="Digital Fabric Printing"></div>
-                                                    </div>
-                                                    <div class="icon-box icon-box-body">
-                                                        <h3 class="title">Digital Fabric Printing</h3>
-                                                        <p class="icon-box-description">Lorem ipsum dolor sit amet,
-                                                            consectet adipiscing elit, sed do eiusmod tempor incididunt
-                                                            ut labore et dolore </p>
-                                                        <div class="icon-box-button ">
-                                                            <div class="btn-wrapper icon-position-after">
-                                                                <a href class="icon-box-link">Read More<i
-                                                                        aria-hidden="true"
-                                                                        class="fas fa-arrow-right"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </div>
         </div>
     </section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-4ddc9b7 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
-        data-id="4ddc9b7" data-element_type="section"
-        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f04208d"
-                data-id="f04208d" data-element_type="column"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-background-overlay"></div>
-                    <div class="elementor-element elementor-element-9ec3e92 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                        data-id="9ec3e92" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
-                        data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">25 Years of Experience in Textile
-                                Industry</h2>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-a780f96 elementor-widget elementor-widget-text-editor"
-                        data-id="a780f96" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </div>
-                    </div>
-                    <div class="elementor-element elementor-element-18d8306 elementor-widget elementor-widget-jkit_progress_bar"
-                        data-id="18d8306" data-element_type="widget" data-widget_type="jkit_progress_bar.default">
-                        <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-progress-bar jeg_module_17_15_635d0b115f4db">
-                                <div class="progress-group ">
-                                    <div class="progress-skill-bar">
-                                        <div class="skill-bar-content"><span class="skill-title">Textile Services</span>
-                                        </div>
-                                        <div class="skill-bar">
-                                            <div class="skill-track">
-
-                                                <div class="number-percentage-wrapper">
-                                                    <span class="number-percentage" data-value="89"
-                                                        data-animation-duration="3500">89%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-d7bd3cd elementor-widget elementor-widget-jkit_progress_bar"
-                        data-id="d7bd3cd" data-element_type="widget" data-widget_type="jkit_progress_bar.default">
-                        <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-progress-bar jeg_module_17_16_635d0b1160b60">
-                                <div class="progress-group ">
-                                    <div class="progress-skill-bar">
-                                        <div class="skill-bar-content"><span class="skill-title">Textile
-                                                Materials</span></div>
-                                        <div class="skill-bar">
-                                            <div class="skill-track">
-
-                                                <div class="number-percentage-wrapper">
-                                                    <span class="number-percentage" data-value="86"
-                                                        data-animation-duration="3500">86%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-35ff85f elementor-widget elementor-widget-jkit_progress_bar"
-                        data-id="35ff85f" data-element_type="widget" data-widget_type="jkit_progress_bar.default">
-                        <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-progress-bar jeg_module_17_17_635d0b116227b">
-                                <div class="progress-group ">
-                                    <div class="progress-skill-bar">
-                                        <div class="skill-bar-content"><span class="skill-title">Specialist
-                                                Fabrics</span></div>
-                                        <div class="skill-bar">
-                                            <div class="skill-track">
-
-                                                <div class="number-percentage-wrapper">
-                                                    <span class="number-percentage" data-value="82"
-                                                        data-animation-duration="3500">82%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-fbf43e3 elementor-widget elementor-widget-jkit_progress_bar"
-                        data-id="fbf43e3" data-element_type="widget" data-widget_type="jkit_progress_bar.default">
-                        <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-progress-bar jeg_module_17_18_635d0b1163986">
-                                <div class="progress-group ">
-                                    <div class="progress-skill-bar">
-                                        <div class="skill-bar-content"><span class="skill-title">Experience</span></div>
-                                        <div class="skill-bar">
-                                            <div class="skill-track">
-
-                                                <div class="number-percentage-wrapper">
-                                                    <span class="number-percentage" data-value="86"
-                                                        data-animation-duration="3500">86%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-97bf745 elementor-hidden-phone"
-                data-id="97bf745" data-element_type="column"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-background-overlay"></div>
-                    <div class="elementor-element elementor-element-4632253 elementor-widget elementor-widget-spacer"
-                        data-id="4632253" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-spacer">
-                                <div class="elementor-spacer-inner"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-bf93e4d elementor-section-content-bottom elementor-hidden-phone animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-                        data-id="bf93e4d" data-element_type="section"
-                        data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                        <div class="elementor-container elementor-column-gap-default">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a74ae02"
-                                data-id="a74ae02" data-element_type="column">
-                                <div class="elementor-widget-wrap">
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7c8bfd0"
-                                data-id="7c8bfd0" data-element_type="column"
-                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-22c78bc elementor-widget elementor-widget-heading"
-                                        data-id="22c78bc" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">We Production
-                                                Best Textiles</h3>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-349e62d elementor-widget elementor-widget-text-editor"
-                                        data-id="349e62d" data-element_type="widget"
-                                        data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-834a6b2 elementor-widget elementor-widget-button"
-                                        data-id="834a6b2" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a href="#"
-                                                    class="elementor-button-link elementor-button elementor-size-sm"
-                                                    role="button">
-                                                    <span class="elementor-button-content-wrapper">
-                                                        <span class="elementor-button-icon elementor-align-icon-right">
-                                                            <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                                                        </span>
-                                                        <span class="elementor-button-text">View Projects</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-1dfe8f9 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="1dfe8f9" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b912c85"
-                data-id="b912c85" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-3dbb597 animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
-                        data-id="3dbb597" data-element_type="widget"
-                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                        data-widget_type="jkit_heading.default">
-                        <div class="elementor-widget-container">
-                            <div
-                                class="jeg-elementor-kit jkit-heading  align-center align-tablet-left align-mobile-left jeg_module_17_19_635d0b116a62d">
-                                <div class="heading-section-title ">
-                                    <h5 class="heading-title">Our Products</h5>
-                                </div>
-                                <div class="heading-section-separator">
-                                    <div class="separator-wrapper style-solid"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-9a327f8 elementor-widget elementor-widget-heading"
-                        data-id="9a327f8" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">Our Packages
-                            </h2>
-                        </div>
-                    </div>
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-d695775 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="d695775" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-05c5009"
-                                data-id="05c5009" data-element_type="column">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-6304f76 elementor-widget elementor-widget-text-editor"
-                                        data-id="6304f76" data-element_type="widget"
-                                        data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            FOUNDED IN 2012 ARVIND ENTERPRISES. AARBIN INDIA PIONEERED MEN GARMENTS,
-                                            EVOLVING AND INNOVATING NOT ONLY THE PRODUCT, BUT ALSO THE WAY IT HAS BEEN
-                                            MARKETED OVER THE YEARS. THE COMPANY IS COMMITTED TO QUALITY, COMFORT,
-                                            FASHION, INNOVATION AND VALUE HALLMARK. </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    @php
-
-                    $planTitle = getContent('mlmPlan.content', true);
-                    $plans = \App\Models\Plan::where('status', 1)->get();
-
-                    @endphp
-                    <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-7a1b32d elementor-section-full_width animated-slow elementor-section-height-default elementor-section-height-default elementor-invisible"
-                        data-id="7a1b32d" data-element_type="section"
-                        data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-                        <div class="elementor-container elementor-column-gap-no row justify-content-center">
-                            @foreach($plans as $plan)
-                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a4b0d29 animated-slow elementor-invisible"
-                                data-id="a4b0d29" data-element_type="column"
-                                data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:160}">
-                                <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-3e658a7 elementor-widget elementor-widget-jkit_team"
-                                        data-id="3e658a7" data-element_type="widget"
-                                        data-widget_type="jkit_team.default">
-                                        <div class="elementor-widget-container">
-                                            <div
-                                                class="jeg-elementor-kit jkit-team style-overlay overlay-bottom jeg_module_17_22_635d0b11806bf">
-                                                <div class="profile-card "><img
-                                                        src="{{asset('textilary/images/pretty-young-seamstress-sitting-by-sewing-machine-and-processing-blue-textile-e1627088678669.jpg')}}"
-                                                        alt="Blue Textile">
-                                                    <div class="hover-area alignment-bottom">
-                                                        <div class="profile-body">
-                                                            <h2 class="profile-title">{{__(@$plan->name)}}</h2>
-                                                            <p class="profile-designation"></p>
-                                                            <div class="price-range text-white mt-5">
-                                                                {{getAmount($plan->price)}} {{$general->cur_text}}
-                                                            </div>
-                                                            <ul class="plan-card__features mt-4">
-                                                                <li> @lang('Incentive Points') (@lang('BV')) : <span
-                                                                        class="amount">{{$plan->bv}}</span>
-                                                                    <span class="icon float-right" data-toggle="modal"
-                                                                        data-target="#exampleModal"><i
-                                                                            class="fas fa-question-circle"></i></span>
-                                                                </li>
-                                                                <li>
-                                                                    @lang('Referral Commission') : <span
-                                                                        class="amount">{{$general->cur_sym}}
-                                                                        {{getAmount($plan->ref_com)}}</span>
-                                                                    <span class="icon float-right" data-toggle="modal"
-                                                                        data-target="#exampleModal2"><i
-                                                                            class="fas fa-question-circle"></i></span>
-                                                                </li>
-
-                                                                <li>
-                                                                    @lang('Commission To Tree') : <span
-                                                                        class="amount">{{$general->cur_sym}}
-                                                                        {{getAmount($plan->tree_com)}}</span>
-                                                                    <span class="icon float-right" data-toggle="modal"
-                                                                        data-target="#exampleModal3"><i
-                                                                            class="fas fa-question-circle"></i></span>
-                                                                </li>
-                                                            </ul>
-                                                            
-                                                        </div>
-                                                        <a href="{{route('buy.plan' , ['id'=>$plan->id])}}" class="btn" style="background-color:#7FC6A4;color:white;width:100%;">BUY NOW</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-04755c0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="04755c0" data-element_type="section">
@@ -1201,6 +741,132 @@ $sliders = getContent('slider.element');
             </div>
         </div>
     </section>
+@php
+$banners = getContent('new_arrival_banner');
+@endphp
+    <section>
+        <h2 class="slider-heading">New Arrivals</h2><br/>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+            @foreach($banners as $key=>$banner)
+            <div class="carousel-item {{$key == 0 ? 'active' : ''}}">
+                <img class="d-block w-100" src="{{asset('assets/images/product/'.$banner->data_values)}}" alt="Fabric Dyeing">
+              </div>
+            @endforeach
+             
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+
+
+    
+    <section
+				class="elementor-section elementor-top-section elementor-element elementor-element-4724db5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+				data-id="4724db5" data-element_type="section"
+				data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5106cb6"
+						data-id="5106cb6" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-fd489cb animated-slow elementor-invisible elementor-widget elementor-widget-jkit_heading"
+								data-id="fd489cb" data-element_type="widget"
+								data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+								data-widget_type="jkit_heading.default">
+								<div class="elementor-widget-container">
+									<div
+										class="jeg-elementor-kit jkit-heading  align-center align-tablet-left align-mobile-left jeg_module_347_15_635d742352050">
+										<div class="heading-section-title ">
+											<h5 class="heading-title">Our Team</h5>
+										</div>
+										<div class="heading-section-separator">
+											<div class="separator-wrapper style-solid"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-d4fa05d elementor-widget"
+								data-id="d4fa05d" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">Meet With Professional
+										Team</h2>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-a8d82cf elementor-widget elementor-widget-text-editor"
+								data-id="a8d82cf" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua </div>
+							</div>
+							@php
+
+                                $teamTitle = getContent('team.content', true);
+                                $teams = getContent('team.element');
+                            @endphp
+							<section
+								class="elementor-section elementor-inner-section elementor-element elementor-element-eae9f78 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="eae9f78" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-no">
+								@foreach($teams as $team)
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-fa09cbc"
+										data-id="fa09cbc" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-2494d60 elementor-widget elementor-widget-jkit_team"
+												data-id="2494d60" data-element_type="widget"
+												data-widget_type="jkit_team.default">
+												<div class="elementor-widget-container">
+													<div
+														class="jeg-elementor-kit jkit-team style-title-horizontal  jeg_module_347_18_635d74236a72c">
+														<div class="profile-card"><img src="{{ getImage('assets/images/frontend/team/'. @$team->data_values->image, '524x614') }}"
+																alt="Vernon Simpson">
+															<div class="image-hover-bg"></div>
+															<div class="profile-body">
+																<div class="title-wrapper">
+																	<p class="profile-designation ">{{@$team->data_values->designation}}</p>
+
+																</div>
+																<div class="name-wrapper">
+																	<h3 class="profile-title">@lang(@$team->data_values->name)</h3>
+																	<ul class="social-list">
+																		<li
+																			class="social-icon elementor-repeater-item-c625a9a">
+																			<a href="#"><i aria-hidden="true"
+																					class="fab fa-facebook-f"></i></a>
+																		</li>
+																		<li
+																			class="social-icon elementor-repeater-item-3a36d8c">
+																			<a href="#"><i aria-hidden="true"
+																					class="fab fa-twitter"></i></a></li>
+																		<li
+																			class="social-icon elementor-repeater-item-e9c8942">
+																			<a href="#"><i aria-hidden="true"
+																					class="jki jki-instagram-1-light"></i></a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								@endforeach
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-e449af9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="e449af9" data-element_type="section"
@@ -1247,5 +913,10 @@ $sliders = getContent('slider.element');
     </section>
 
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 @endsection
+

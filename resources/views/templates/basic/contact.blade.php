@@ -49,13 +49,13 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-cf30c69 elementor-widget elementor-widget-google_maps"
                         data-id="cf30c69" data-element_type="widget" data-widget_type="google_maps.default">
-                        <div class="elementor-widget-container">
+                        <!--<div class="elementor-widget-container">
                             <div class="elementor-custom-embed">
                                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                                     src="https://maps.google.com/maps?q=Jalan%20sunset%20Road%20Kuta&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near"
                                     title="Jalan sunset Road Kuta" aria-label="Jalan sunset Road Kuta"></iframe>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

@@ -125,6 +125,15 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::get('product/delete/{id}', 'MlmController@productDelete')->name('product.delete');
         Route::post('product/update', 'MlmController@productUpdate')->name('product.update');
 
+        //new arrival banner
+        Route::get('banner', 'MlmController@banner')->name('banner');
+        Route::post('banner/store', 'MlmController@bannerStore')->name('banner.store');
+        Route::get('banner/delete/{id}', 'MlmController@bannerDelete')->name('banner.delete');
+
+        //review
+        Route::get('review', 'MlmController@review')->name('review');
+        Route::post('review/store', 'MlmController@reviewStore')->name('review.store');
+
         // matching bonus
         Route::post('matching-bonus/update', 'MlmController@matchingUpdate')->name('matching-bonus.update');
 
@@ -440,3 +449,10 @@ Route::get('/{slug}', 'SiteController@pages')->name('pages');
 
 Route::get('placeholder-image/{size}', 'SiteController@placeholderImage')->name('placeholderImage');
 Route::get('links/{slug}', 'SiteController@links')->name('links');
+
+//products routes
+
+Route::get('/products/bermuda', 'SiteController@productBermuda')->name('productBermuda');
+Route::get('/products/longe', 'SiteController@productLonge')->name('productLonge');
+Route::get('/products/shorts', 'SiteController@productShorts')->name('productShorts');
+Route::get('/products/joggers', 'SiteController@productJoggers')->name('productJoggers');

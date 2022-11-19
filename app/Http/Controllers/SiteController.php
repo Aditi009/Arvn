@@ -293,7 +293,7 @@ class SiteController extends Controller
         })->with('method')->orderby('method_code')->first();
         $data['products'] = Plan::where('id',$id)->with('getProduct','getProduct.getProductImages')->first();
         $data['plan_id']  = $id;
-        $data['reviews'] = Review::where('plan_id',$id)->get();
+        $data['reviews'] = Review::where('plan_id',$id)->where('approved',1)->get();
         return view(activeTemplate() . 'product', $data)->with('data',$gatewayCurrency);
 
     }

@@ -484,8 +484,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             @foreach($reviews as $review)
-                            <input class="rating rating--nojs" max="5" step="1" type="range"
-                            value="{{$review->rating}}" style="padding:0" readonly name="range">
+                            <input class="rating rating--nojs" min="{{$review->rating}}" max="5" step="1" type="range"
+                            value="{{$review->rating}}" style="padding:0" name="range">
                            @php
                               $name = \App\Models\User::find($review->user_id); 
                            @endphp

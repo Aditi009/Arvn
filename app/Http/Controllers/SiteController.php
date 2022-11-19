@@ -14,6 +14,7 @@ use App\Models\SupportMessage;
 use App\Models\SupportTicket;
 use App\Models\User;
 use App\Models\GatewayCurrency;
+use App\Models\Order;
 use App\Models\Review;
 use Auth;
 
@@ -281,6 +282,19 @@ class SiteController extends Controller
         $review->review = $req->review;
         if($review->save()){
             $notify[] = ['success', 'Review & Rating added successfully!'];
+            return back()->withNotify($notify);
+        }
+    }
+
+    public function placedOrder(Request $request){
+    
+        $orders = new Order();
+        $orders->plan_id = $request->plan_id;
+        $orders->user_id = Auth::user()->id;
+        $orders->delivery_charge = $request->amount;
+        $orders->status = 'Pending';
+        if($orders->save()){
+            $notify[] = ['success', 'Order Placed successfully!'];
             return back()->withNotify($notify);
         }
     }

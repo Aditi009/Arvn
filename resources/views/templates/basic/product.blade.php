@@ -342,7 +342,8 @@
                             </h4>
                             <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87
                                     votes)</strong></p>
-                            <form action="{{ route('user.deposit.insert') }}" method="post">
+                                    {{-- {{ route('user.deposit.insert') }} --}}
+                            <form action="{{ route('order.placed') }}" method="post">
                                 <h5 class="sizes">sizes:
                                     <input class="form-control" placeholder="Enter size" type="text"
                                         name="size" />
@@ -371,9 +372,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <input value="{{$plan_id}}" type="hidden" name="plan_id">
 
+                                    {{-- <button class="add-to-cart btn btn-default" type="submit">Buy Now</button> --}}
+                                    <button class="btn btn-default" type="submit">Buy Order</button>
 
-                                    <button class="add-to-cart btn btn-default" type="submit">Buy Now</button>
                             </form>
                         </div>
                     </div>

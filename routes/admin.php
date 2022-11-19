@@ -56,15 +56,11 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 
 
 
-
-
-
         // Subscriber
         Route::get('subscriber', 'SubscriberController@index')->name('subscriber.index');
         Route::get('subscriber/send-email', 'SubscriberController@sendEmailForm')->name('subscriber.sendEmail');
         Route::post('subscriber/remove', 'SubscriberController@remove')->name('subscriber.remove');
         Route::post('subscriber/send-email', 'SubscriberController@sendEmail')->name('subscriber.sendEmail');
-
 
 
 

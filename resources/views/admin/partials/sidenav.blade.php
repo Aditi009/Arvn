@@ -44,6 +44,14 @@
                     </a>
                 </li>
 
+                <li class="sidebar-menu-item {{menuActive('admin.Order*')}}">
+                    <a href="{{route('admin.order')}}" class="nav-link ">
+                        <i class="menu-icon las la-paper-plane"></i>
+                        <span class="menu-title">Order</span>
+                    </a>
+                </li>
+
+
                 <li class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="{{menuActive('admin.users*',3)}}">
                         <i class="menu-icon las la-users"></i>

@@ -49,6 +49,8 @@ class MlmController extends Controller
         return view('admin.review.index', compact('page_title', 'products', 'empty_message','plans'));
     }
 
+    
+
    
     public function reviewApprove(Request $request,$id){
         $review = Review::where('id',$id)->first();

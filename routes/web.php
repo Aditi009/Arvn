@@ -140,6 +140,13 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         // matching bonus
         Route::post('matching-bonus/update', 'MlmController@matchingUpdate')->name('matching-bonus.update');
 
+
+        //order
+        Route::get('order', 'OrderController@getOrder')->name('order');
+        Route::post('/update-status','OrderController@updateOrderStatus')->name('order.update-status');
+
+
+
         // tree
         Route::get('/tree/{id}', 'ManageUsersController@tree')->name('users.single.tree');
         Route::get('/user/tree/{user}', 'ManageUsersController@otherTree')->name('users.other.tree');
@@ -442,6 +449,9 @@ Route::get('/buy-plan/{id}','SiteController@getBuyPlan')->name('buy.plan');
 Route::post('store-rating','SiteController@storeRating')->name('store.rating');
 Route::post('/contact', 'SiteController@contactSubmit')->name('contact.send');
 Route::get('/change/{lang?}', 'SiteController@changeLanguage')->name('lang');
+
+Route::post('/placed-order','SiteController@placedOrder')->name('order.placed');
+
 
 Route::get('/blog', 'SiteController@blog')->name('blog');
 Route::get('/blog/details/{slug}/{id}', 'SiteController@singleBlog')->name('singleBlog');

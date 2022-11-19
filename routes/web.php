@@ -144,8 +144,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         //order
         Route::get('order', 'OrderController@getOrder')->name('order');
         Route::post('/update-status','OrderController@updateOrderStatus')->name('order.update-status');
+        Route::get('/view-shipping/{id}','OrderController@viewOrderShippingAddress')->name('order.view-shipping');
 
-
+ 
 
         // tree
         Route::get('/tree/{id}', 'ManageUsersController@tree')->name('users.single.tree');

@@ -35,6 +35,13 @@
                                     </td>
 
                                     <td data-label="@lang('Action')">
+                                        <a href="{{route('admin.order.view-shipping',$plan->id)}}" type="button" class="icon-btn view" data-toggle="tooltip"
+                                        data-id="{{ $plan->id }}"
+                                        data-name="{{ $plan->name }}"
+                                        data-status="{{ $plan->status }}"
+                                        data-original-title="View">
+                                            <i class="la la-eye"></i>
+                                        </a>
                                         <button type="button" class="icon-btn edit" data-toggle="tooltip"
                                                 data-id="{{ $plan->id }}"
                                                 data-name="{{ $plan->name }}"
@@ -85,8 +92,10 @@
                                 <label class="font-weight-bold"> Status :</label>
                                 <select class="form-control status" name="status">
                                     <option value="Placed">Placed</option>
+                                    <option value="Pending">Pending</option>
                                     <option value="confirmed">confirmed</option>
-                                    <option value="Placed">Pending</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
 
                                 </select>
                             </div>

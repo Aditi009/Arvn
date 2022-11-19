@@ -293,6 +293,7 @@ class SiteController extends Controller
         $orders->user_id = Auth::user()->id;
         $orders->delivery_charge = $request->amount;
         $orders->status = 'Pending';
+        $orders->size = $request->size;
         if($orders->save()){
             $notify[] = ['success', 'Order Placed successfully!'];
             return back()->withNotify($notify);

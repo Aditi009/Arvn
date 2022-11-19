@@ -135,6 +135,7 @@
                                     <a href="{{ route('admin.review.approved', $plan->id) }}" class="icon-btn ml-1" data-toggle="tooltip" data-original-title="@lang('Approve')">
                                         Approve
                                     </a>
+                                    {{-- comment --}}
                                     
                                     @endif
                                 </td>

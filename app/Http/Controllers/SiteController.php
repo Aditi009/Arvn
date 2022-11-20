@@ -292,12 +292,18 @@ class SiteController extends Controller
         $orders->plan_id = $request->plan_id;
         $orders->user_id = Auth::user()->id;
         $orders->delivery_charge = $request->amount;
-        $orders->status = 'Pending';
+        $orders->status = 'payment';
         $orders->size = $request->size;
-        if($orders->save()){
-            $notify[] = ['success', 'Order Placed successfully!'];
+        if(! $orders->save()){
+            $notify[] = ['error', 'Order Failed!'];
             return back()->withNotify($notify);
         }
+        $plan = Plan::find($request->plan_id);
+        $name = Auth::user()->firstname;
+        $email = Auth::user()->email;
+        $amount = number_format((float) $plan->price , 2, '.', '') * 100;
+        $data['page_title'] = "Payment";
+        return view(activeTemplate() . 'payment',$data)->with('order', $orders)->with('amount',$amount)->with('name',$name)->with('email',$email);
     }
 
 

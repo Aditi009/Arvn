@@ -25,12 +25,19 @@
                     </a>
                 </li>
 
+                <li class="sidebar-menu-item {{menuActive('user.myorder')}}">
+                    <a href="{{route('user.myorder')}}" class="nav-link ">
+                        <i class="menu-icon las la-lightbulb"></i>
+                        <span class="menu-title">@lang('My Orders')</span>
+                    </a>
+                </li>
+
 
 
                 <li class="sidebar-menu-item {{ menuActive('user.bv.log') }}">
                     <a href="{{ route('user.bv.log') }}" class="nav-link">
                         <i class="menu-icon las la-sitemap"></i>
-                        <span class="menu-title">@lang('BV Log')</span>
+                        <span class="menu-title">@lang('IP Log')</span>
                     </a>
                 </li>
                 <li class="sidebar-menu-item {{ menuActive('user.my.ref') }}">

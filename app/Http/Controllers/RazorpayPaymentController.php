@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Razorpay\Api\Api;
 use Session;
 use Exception;
+use App\Models\Order;
 class RazorpayPaymentController extends Controller
 {
     /**
@@ -15,7 +16,7 @@ class RazorpayPaymentController extends Controller
     */
    public function index()
    {        
-       return view('razorpayView');
+       return view(activeTemplate() . 'payment');
    }
  
    /**
@@ -41,7 +42,11 @@ class RazorpayPaymentController extends Controller
                return redirect()->back();
            }
        }
-         
+       
+       $order = Order::where('id', $request->order_id)->first();
+       
+
+
        Session::put('success', 'Payment successful');
        return redirect()->back();
    }

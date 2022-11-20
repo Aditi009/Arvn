@@ -11,6 +11,11 @@ use App\Models\UserExtra;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use Razorpay\Api\Api;
+use Session;
+use Exception;
+use App\Models\Order;
+
 class PlanController extends Controller
 {
 
@@ -25,6 +30,17 @@ class PlanController extends Controller
         $data['plans'] = Plan::whereStatus(1)->get();
         return view($this->activeTemplate . '.user.plan', $data);
 
+    }
+
+    public function myOrder(Type $var = null)
+    {
+        $data['page_title'] = "Orders";
+        $data['plans'] = Order::select('orders.*','plans.name','users.firstname','users.email','users.lastname')->leftJoin('users',function($leftJoin){
+            $leftJoin->on('users.id','=','orders.user_id');
+        })->leftJoin('plans',function($leftJoin){
+            $leftJoin->on('plans.id','=','orders.plan_id');
+        })->where('orders.user_id',Auth::user()->id)->where('orders.status','!=','payment')->get();
+        return view($this->activeTemplate . '.user.myorder', $data);
     }
 
     function planStore(Request $request)
@@ -80,6 +96,68 @@ class PlanController extends Controller
             return redirect()->route('user.home')->withNotify($notify);
 
     }
+
+     /**
+    * Write code on Method
+    *
+    * @return response()
+    */
+   public function store(Request $request)
+   {
+       $input = $request->all();
+ 
+       $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
+ 
+       $payment = $api->payment->fetch($input['razorpay_payment_id']);
+ 
+       if(count($input)  && !empty($input['razorpay_payment_id'])) {
+           try {
+               $response = $api->payment->fetch($input['razorpay_payment_id'])->capture(array('amount'=>$payment['amount'])); 
+ 
+           } catch (Exception $e) {
+               return  $e->getMessage();
+               Session::put('error',$e->getMessage());
+               return redirect()->back();
+           }
+       }
+       
+       $order = Order::where('id', $request->order_id)->first();
+       $user = User::find($order->user_id);
+       $plan = Plan::where('id', $order->plan_id)->where('status', 1)->firstOrFail();
+       $gnl = GeneralSetting::first();
+
+        $oldPlan = $user->plan_id;
+        $user->plan_id = $plan->id;
+        $user->balance -= $plan->price;
+        $user->total_invest += $plan->price;
+        $user->save();
+
+        // $trx = $user->transactions()->create([
+        //     'amount' => $plan->price,
+        //     'trx_type' => '-',
+        //     'details' => 'Purchased ' . $plan->name . 'By online payment',
+        //     'remark' => 'purchased_plan_online',
+        //     'trx' => getTrx(),
+        //     'post_balance' => getAmount($user->balance),
+        // ]);
+
+        if ($oldPlan == 0) {
+            updatePaidCount($user->id);
+        }
+        $details = $user->username . ' Subscribed to ' . $plan->name . ' plan.';
+
+        updateBV($user->id, $plan->bv, $details);
+
+        if ($plan->tree_com > 0) {
+            treeComission($user->id, $plan->tree_com, $details);
+        }
+
+        referralComission($user->id, $details);
+
+
+       Session::put('success', 'Payment successful');
+       return redirect()->back();
+   }
 
 
     public function binaryCom()

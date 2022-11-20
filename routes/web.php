@@ -12,9 +12,10 @@ Route::get('/clear', function(){
 |--------------------------------------------------------------------------
 */
 
-Route::get('/test', function(){
-    return view('test');
-})->name('seraj');
+Route::get('/test', 'RazorpayPaymentController@index')->name('seraj');
+//payment route
+Route::get('test1', 'RazorpayPaymentController@index');
+Route::post('razorpay-payment', 'RazorpayPaymentController@store')->name('razorpay.payment.store');
 
 Route::get('/cron', 'CronController@cron')->name('bv.matching.cron');
 
@@ -388,6 +389,8 @@ Route::name('user.')->prefix('user')->group(function () {
             Route::get('/plan', 'PlanController@planIndex')->name('plan.index');
             Route::post('/plan', 'PlanController@planStore')->name('plan.purchase');
             Route::get('/referral-log', 'UserController@referralCom')->name('referral.log');
+            Route::get('/order', 'PlanController@myOrder')->name('myorder');
+
 
             Route::get('/binary-log', 'PlanController@binaryCom')->name('binary.log');
             Route::get('/binary-summery', 'PlanController@binarySummery')->name('binary.summery');
@@ -452,6 +455,9 @@ Route::post('/contact', 'SiteController@contactSubmit')->name('contact.send');
 Route::get('/change/{lang?}', 'SiteController@changeLanguage')->name('lang');
 
 Route::post('/placed-order','SiteController@placedOrder')->name('order.placed')->middleware('auth');;
+Route::get('/placed-order',function(){
+    echo "Apologies for inconvinience caused, Order failed due to security reason, Please place order again!";
+})->middleware('auth');;
 
 
 Route::get('/blog', 'SiteController@blog')->name('blog');
@@ -473,5 +479,7 @@ Route::get('/products/shorts', 'SiteController@productShorts')->name('productSho
 Route::get('/products/joggers', 'SiteController@productJoggers')->name('productJoggers');
 
 //payment route
-Route::get('razorpay-payment', [RazorpayPaymentController::class, 'index']);
-Route::post('razorpay-payment', [RazorpayPaymentController::class, 'store'])->name('razorpay.payment.store');
+Route::get('test1', 'RazorpayPaymentController@index');
+Route::post('razorpay-payment', 'PlanController@store')->name('razorpay.payment.store');
+Route::get('success/{id}', 'Admin\OrderController@sucessOrder')->name('order.success');
+Route::get('order-status/{id}', 'Admin\OrderController@orderStatus')->name('order.status')->middleware('auth');

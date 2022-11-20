@@ -7,6 +7,7 @@ use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Auth;
 
 class OrderController extends Controller
 {
@@ -19,6 +20,18 @@ class OrderController extends Controller
         $leftJoin->on('plans.id','=','orders.plan_id');
     })->paginate(getPaginate());
     return view('admin.orders.index', compact('page_title', 'orders', 'empty_message'));
+  }
+  public function sucessOrder($id)
+  {
+      $data['page_title'] = "Order Successful";
+      return view('templates.basic.success', $data);
+  }
+  public function orderStatus($id)
+  {
+    $data['page_title'] = "Order Successful";
+    $orders = Order::where(['user_id'=>Auth::user()->id,'id' => $id])->first();
+
+    return view('templates.basic.orderstatus', $data)->with('order',$orders);
   }
   public function viewOrderShippingAddress($id){
     $orders = Order::find($id);

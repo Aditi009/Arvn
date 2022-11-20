@@ -451,7 +451,7 @@ Route::post('store-rating','SiteController@storeRating')->name('store.rating');
 Route::post('/contact', 'SiteController@contactSubmit')->name('contact.send');
 Route::get('/change/{lang?}', 'SiteController@changeLanguage')->name('lang');
 
-Route::post('/placed-order','SiteController@placedOrder')->name('order.placed');
+Route::post('/placed-order','SiteController@placedOrder')->name('order.placed')->middleware('auth');;
 
 
 Route::get('/blog', 'SiteController@blog')->name('blog');
@@ -471,3 +471,7 @@ Route::get('/products/bermuda', 'SiteController@productBermuda')->name('productB
 Route::get('/products/longe', 'SiteController@productLonge')->name('productLonge');
 Route::get('/products/shorts', 'SiteController@productShorts')->name('productShorts');
 Route::get('/products/joggers', 'SiteController@productJoggers')->name('productJoggers');
+
+//payment route
+Route::get('razorpay-payment', [RazorpayPaymentController::class, 'index']);
+Route::post('razorpay-payment', [RazorpayPaymentController::class, 'store'])->name('razorpay.payment.store');

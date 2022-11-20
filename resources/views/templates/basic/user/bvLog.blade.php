@@ -10,7 +10,7 @@
                             <thead>
                             <tr>
                                 <th scope="col">@lang('Sl')</th>
-                                <th scope="col">@lang('BV')</th>
+                                <th scope="col">@lang('IP')</th>
                                 <th scope="col">@lang('Position')</th>
                                 <th scope="col">@lang('Detail')</th>
                                 <th scope="col">@lang('Date')</th>
@@ -19,7 +19,7 @@
                             <tbody>
                             @forelse($logs as $key=>$data)
                                 <tr><td data-label="@lang('Sl')">{{$logs->firstItem()+$key}}</td>
-                                    <td data-label="@lang('BV')" class="budget">
+                                    <td data-label="@lang('IP')" class="budget">
                                         <strong @if($data->trx_type == '+') class="text-success" @else class="text-danger" @endif> {{($data->trx_type == '+') ? '+':'-'}} {{getAmount($data->amount)}}</strong>
                                     </td>
 

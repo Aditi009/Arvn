@@ -125,7 +125,7 @@
 
 
 
-                <li class="sidebar-menu-item sidebar-dropdown">
+                <li hidden class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="{{menuActive('admin.deposit*',3)}}">
                         <i class="menu-icon las la-credit-card"></i>
                         <span class="menu-title">@lang('Deposits')</span>
@@ -135,7 +135,7 @@
                             </span>
                         @endif
                     </a>
-                    <div class="sidebar-submenu {{menuActive('admin.deposit*',2)}} ">
+                    <div hidden class="sidebar-submenu {{menuActive('admin.deposit*',2)}} ">
                         <ul>
 
                             <li class="sidebar-menu-item {{menuActive('admin.deposit.pending')}} ">
@@ -306,7 +306,7 @@
                             <li class="sidebar-menu-item {{menuActive(['admin.report.bvLog'])}}">
                                 <a href="{{route('admin.report.bvLog')}}" class="nav-link">
                                     <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title">@lang('BV Log')</span>
+                                    <span class="menu-title">@lang('IP Log')</span>
                                 </a>
                             </li>
                             <li class="sidebar-menu-item {{menuActive(['admin.report.refCom'])}}">
@@ -368,7 +368,7 @@
                     </a>
                 </li>
 
-                <li class="sidebar-menu-item sidebar-dropdown">
+                <li hidden class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="{{menuActive('admin.gateway*',3)}}">
                         <i class="menu-icon la la-paypal"></i>
                         <span class="menu-title">@lang('Gateways')</span>
@@ -393,12 +393,7 @@
                     </div>
                 </li>
 
-                <li class="sidebar-menu-item {{menuActive('admin.extensions.index')}}">
-                    <a href="{{route('admin.extensions.index')}}" class="nav-link">
-                        <i class="menu-icon las la-cogs"></i>
-                        <span class="menu-title">@lang('Extensions')</span>
-                    </a>
-                </li>
+          
 
                 <li class="sidebar-menu-item  {{menuActive(['admin.language.manage','admin.language.key'])}}">
                     <a href="{{route('admin.language.manage')}}" class="nav-link"
@@ -525,8 +520,8 @@
                 </li>
             </ul>
             <div class="text-center mb-3 text-uppercase">
-                <span class="text--primary">{{systemDetails()['name']}}</span>
-                <span class="text--success">@lang('V'){{systemDetails()['version']}} </span>
+                <span class="text--primary">Designed by <a href="https://swiftcoder.in">swiftcoder</a></span>
+            
             </div>
         </div>
     </div>

@@ -13,8 +13,8 @@
                                 <th scope="col">@lang('Paid right')</th>
                                 <th scope="col">@lang('Free left')</th>
                                 <th scope="col">@lang('Free right')</th>
-                                <th scope="col">@lang('Bv left')</th>
-                                <th scope="col">@lang('Bv right')</th>
+                                <th scope="col">@lang('IP left')</th>
+                                <th scope="col">@lang('IP right')</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -23,8 +23,8 @@
                                 <td data-label="@lang('Paid right')">{{$logs->paid_right}}</td>
                                 <td data-label="@lang('Free left')">{{$logs->free_left}}</td>
                                 <td data-label="@lang('Free right')">{{$logs->free_right}}</td>
-                                <td data-label="@lang('Bv left')">{{getAmount($logs->bv_left)}}</td>
-                                <td data-label="@lang('Bv right')">{{getAmount($logs->bv_right)}}</td>
+                                <td data-label="@lang('IP left')">{{getAmount($logs->bv_left)}}</td>
+                                <td data-label="@lang('IP right')">{{getAmount($logs->bv_right)}}</td>
                             </tr>
                             </tbody>
                         </table>

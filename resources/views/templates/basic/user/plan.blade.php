@@ -11,7 +11,7 @@
                             <span class="price text--dark font-weight-bold d-block">{{$general->cur_sym}}{{getAmount($data->price)}}</span>
                             <hr>
                             <ul class="package-features-list mt-30">
-                                <li><i class="fas fa-check bg--success"></i> <span>@lang('Business Volume (BV)'): {{getAmount($data->bv)}}</span>   <span class="icon" data-toggle="modal" data-target="#bvInfoModal"><i
+                                <li><i class="fas fa-check bg--success"></i> <span>@lang('Incentive Points (IP)'): {{getAmount($data->bv)}}</span>   <span class="icon" data-toggle="modal" data-target="#bvInfoModal"><i
                                             class="fas fa-question-circle"></i></span></li>
                                 <li><i class="fas fa-check bg--success"></i> <span> @lang('Referral Commission'): {{$general->cur_sym}} {{getAmount($data->ref_com)}} </span>
                                     <span class="icon" data-toggle="modal" data-target="#refComInfoModal"><i
@@ -25,9 +25,9 @@
                             </ul>
                         </div>
                         @if(Auth::user()->plan_id != $data->id)
-                            <a href="#confBuyModal{{$data->id}}" data-toggle="modal" class="btn w-100 btn-outline--primary  mt-20 py-2 box--shadow1">@lang('Subscribe')</a>
+                            <a href="{{ route('buy.plan', $data->id) }}"class="btn w-100 btn-outline--primary  mt-20 py-2 box--shadow1">@lang('Buy')</a>
                         @else
-                            <a data-toggle="modal" class="btn w-100 btn-outline--primary  mt-20 py-2 box--shadow1">@lang('Already Subscribe')</a>
+                            <a data-toggle="modal" class="btn w-100 btn-outline--primary  mt-20 py-2 box--shadow1">@lang('Already Purchased')</a>
                         @endif
                     </div>
 
@@ -67,7 +67,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">@lang("Business Volume (BV) info")</h5>
+                    <h5 class="modal-title">@lang("Incentive Points (IP) info")</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="@lang('Close')">
                         <span aria-hidden="true">&times;</span>
                     </button>

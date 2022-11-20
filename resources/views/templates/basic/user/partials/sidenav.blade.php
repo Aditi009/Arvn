@@ -70,24 +70,19 @@
                         <span class="menu-title">@lang('Shipping Address')</span>
                     </a>
                 </li>
-                <li class="sidebar-menu-item {{ menuActive('user.deposit') }}">
-                    <a href="{{ route('user.deposit') }}" class="nav-link">
-                        <i class=" menu-icon las la-credit-card"></i>
-                        <span class="menu-title">@lang('Deposit Now')</span>
-                    </a>
-                </li>
+                
                 <li class="sidebar-menu-item {{ menuActive('user.withdraw') }}">
                     <a href="{{ route('user.withdraw') }}" class="nav-link">
                         <i class="menu-icon las la-cloud-download-alt"></i>
                         <span class="menu-title">@lang('Withdraw Now')</span>
                     </a>
                 </li>
-                <li class="sidebar-menu-item {{ menuActive('user.balance.transfer') }}">
+                <!-- li class="sidebar-menu-item {{ menuActive('user.balance.transfer') }}">
                     <a href="{{ route('user.balance.transfer') }}" class="nav-link">
                         <i class="menu-icon las la-hand-holding-usd"></i>
                         <span class="menu-title">@lang('Balance Transfer')</span>
                     </a>
-                </li>
+                </li -->
                 <li class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="{{menuActive('user.report*',3)}} my-2">
                         <i class="menu-icon las la-exchange-alt"></i>
@@ -102,12 +97,7 @@
                                 </a>
                             </li>
 
-                            <li class="sidebar-menu-item {{menuActive('user.report.deposit')}}">
-                                <a href="{{route('user.report.deposit')}}" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title">@lang('Deposit Log')</span>
-                                </a>
-                            </li>
+                            
 
                             <li class="sidebar-menu-item {{menuActive('user.report.withdraw')}}">
                                 <a href="{{route('user.report.withdraw')}}" class="nav-link">
@@ -139,12 +129,12 @@
                     </div>
                 </li>
 
-                <li class="sidebar-menu-item {{ menuActive('user.twofactor') }}">
+                <!--li class="sidebar-menu-item {{ menuActive('user.twofactor') }}">
                     <a href="{{ route('user.twofactor') }}" class="nav-link">
                         <i class="menu-icon las la-shield-alt"></i>
                         <span class="menu-title">@lang('2FA Security')</span>
                     </a>
-                </li>
+                </li--->
 
                 <li class="sidebar-menu-item {{ menuActive('ticket') }}">
                     <a href="{{ route('ticket') }}" class="nav-link">

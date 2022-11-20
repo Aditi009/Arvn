@@ -156,7 +156,7 @@ class PlanController extends Controller
 
 
        Session::put('success', 'Payment successful');
-       return redirect()->back();
+       return redirect()->route('order.status',['id'=>$request->order_id]);
    }
 
 
@@ -234,5 +234,7 @@ class PlanController extends Controller
         return redirect()->route('user.my.tree')->withNotify($notify);
 
     }
+
+    
 
 }

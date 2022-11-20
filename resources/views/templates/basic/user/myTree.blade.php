@@ -116,7 +116,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>@lang('Current BV')</td>
+                                    <td>@lang('Current IP')</td>
                                     <td><span class="lbv"></span></td>
                                     <td><span class="rbv"></span></td>
                                 </tr>

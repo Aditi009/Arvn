@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
+        <!--div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
             <div class="dashboard-w1 bg--primary b-radius--10 box-shadow">
                 <div class="icon">
                     <i class="las la-cloud-upload-alt "></i>
@@ -67,7 +67,7 @@
                        class="btn btn-sm text--small bg--white text--black box--shadow3 mt-3">@lang('View All')</a>
                 </div>
             </div>
-        </div>
+        </div-->
 
         <div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
             <div class="dashboard-w1 bg--10 b-radius--10 box-shadow">
@@ -141,7 +141,7 @@
             </div>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
+        <!--div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
             <div class="dashboard-w1 bg--cyan b-radius--10 box-shadow">
                 <div class="icon">
                     <i class="las la-money-bill-wave"></i>
@@ -158,7 +158,7 @@
                        class="btn btn-sm text--small bg--white text--black box--shadow3 mt-3">@lang('View All')</a>
                 </div>
             </div>
-        </div>
+        </div-->
 
         <div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
             <div class="dashboard-w1 bg--12 b-radius--10 box-shadow">
@@ -265,7 +265,7 @@
                             class="amount">{{auth()->user()->userExtra->bv_left + auth()->user()->userExtra->bv_right}}</span>
                     </div>
                     <div class="desciption">
-                        <span class="text--small">@lang('Total BV')</span>
+                        <span class="text--small">@lang('Total IP')</span>
                     </div>
                     <a href="{{route('user.bv.log')}}?type=paidBV"
                        class="btn btn-sm text--small bg--white text--black box--shadow3 mt-3">@lang('View All')</a>
@@ -284,7 +284,7 @@
                         <span class="amount">{{getAmount(auth()->user()->userExtra->bv_left)}}</span>
                     </div>
                     <div class="desciption">
-                        <span class="text--small">@lang('Left BV')</span>
+                        <span class="text--small">@lang('Left IP')</span>
                     </div>
                     <a href="{{route('user.bv.log')}}?type=leftBV"
                        class="btn btn-sm text--small bg--white text--black box--shadow3 mt-3">@lang('View All')</a>
@@ -302,7 +302,7 @@
                         <span class="amount">{{getAmount(auth()->user()->userExtra->bv_right)}}</span>
                     </div>
                     <div class="desciption">
-                        <span class="text--small">@lang('Right BV')</span>
+                        <span class="text--small">@lang('Right IP')</span>
                     </div>
                     <a href="{{route('user.bv.log')}}?type=rightBV"
                        class="btn btn-sm text--small bg--white text--black box--shadow3 mt-3">@lang('View All')</a>
@@ -311,7 +311,7 @@
         </div>
 
 
-        <div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
+        <!--div class="col-xl-3 col-lg-4 col-sm-6 mb-30">
             <div class="dashboard-w1 bg--13 b-radius--10 box-shadow">
                 <div class="icon">
                     <i class="las la-hand-holding-usd"></i>
@@ -322,13 +322,13 @@
                         <span class="currency-sign">{{$general->cur_text}}</span>
                     </div>
                     <div class="desciption">
-                        <span class="text--small">@lang('Total Bv Cut')</span>
+                        <span class="text--small">@lang('Total IP Cut')</span>
                     </div>
                     <a href="{{route('user.bv.log')}}?type=cutBV"
                        class="btn btn-sm text--small bg--white text--black box--shadow3 mt-3">@lang('View All')</a>
                 </div>
             </div>
-        </div>
+        </div-->
     </div>
 
 @endsection

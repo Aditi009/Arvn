@@ -307,10 +307,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
-                                <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
-                                <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
-                                <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+                               
                             </div>
                             <ul class="preview-thumbnail get-details nav nav-tabs">
                                 @foreach ($products->getProduct as $item)
@@ -334,14 +331,12 @@
                                 </div>
                                 <span class="review-no">41 reviews</span>
                             </div>
-                            <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium
-                                cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+                            <p class="product-description"></p>
                             <h4 class="price">current price:
                                 <span>{{ number_format((float) $products->price, 2, '.', '') }}</span><span
                                     class="currency-addon addon">{{ $general->cur_text }}</span>
                             </h4>
-                            <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87
-                                    votes)</strong></p>
+                            <p class="vote"><strong>{{count($reviews)}}</strong> Ratings</p>
                                     {{-- {{ route('user.deposit.insert') }} --}}
                             <form action="{{ route('order.placed') }}" method="post">
                                 <h5 class="sizes">sizes:
@@ -384,7 +379,7 @@
             </div>
         </div>
         <style>
-            .rating {
+            form .rating {
                 --dir: right;
                 --fill: gold;
                 --fillbg: rgba(100, 100, 100, 0.15);
@@ -407,69 +402,69 @@
                 --dir: left;
             }
 
-            .rating::-moz-range-track {
+           form .rating::-moz-range-track {
                 background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
                 block-size: 100%;
                 mask: repeat left center/var(--starsize) var(--symbol);
             }
 
-            .rating-heading{
+            form .rating-heading{
                 text-align: center;
             }
-            .rating::-webkit-slider-runnable-track {
+            form .rating::-webkit-slider-runnable-track {
                 background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
                 block-size: 100%;
                 mask: repeat left center/var(--starsize) var(--symbol);
                 -webkit-mask: repeat left center/var(--starsize) var(--symbol);
             }
 
-            .rating::-moz-range-thumb {
+            form .rating::-moz-range-thumb {
                 height: var(--starsize);
                 opacity: 0;
                 width: var(--starsize);
             }
 
-            .rating::-webkit-slider-thumb {
+            form .rating::-webkit-slider-thumb {
                 height: var(--starsize);
                 opacity: 0;
                 width: var(--starsize);
                 -webkit-appearance: none;
             }
 
-            .rating,
+            form .rating,
             .rating-label {
                 display: block;
                 font-family: ui-sans-serif, system-ui, sans-serif;
             }
 
-            .rating{
+            form .rating{
                 border: 0px !important;
                 background: transparent !important;
             }
-            .rating-label {
+           form .rating-label {
                 margin-block-end: 1rem;
             }
 
             /* NO JS */
-            .rating--nojs::-moz-range-track {
+            form .rating--nojs::-moz-range-track {
                 background: var(--fillbg);
             }
 
-            .rating--nojs::-moz-range-progress {
+           form .rating--nojs::-moz-range-progress {
                 background: var(--fill);
                 block-size: 100%;
                 mask: repeat left center/var(--starsize) var(--star);
             }
 
-            .rating--nojs::-webkit-slider-runnable-track {
+           form .rating--nojs::-webkit-slider-runnable-track {
                 background: var(--fillbg);
             }
 
-            .rating-form{
+           form .rating-form{
                 padding: 16px;
                 border: 1px solid lightgrey;
             }
-            .rating--nojs::-webkit-slider-thumb {
+           form .rating--nojs::-webkit-slider-thumb {
                 background-color: var(--fill);
                 box-shadow: calc(0rem - var(--w)) 0 0 var(--w) var(--fill);
                 opacity: 1;
@@ -487,13 +482,22 @@
                     <div class="row">
                         <div class="col-md-8">
                             @foreach($reviews as $review)
-                            <input class="rating rating--nojs" min="{{$review->rating}}" max="5" step="1" type="range"
-                            value="{{$review->rating}}" style="padding:0" name="range">
+                            <div class="container p-2 m-1" style="border-bottom:1px solid grey;">
+                             <div class="rating">
+                                <div class="stars">
+                                    <span class="fa fa-star {{$review->rating >= 1 ? 'checked': '' }}"></span>
+                                    <span class="fa fa-star {{$review->rating >= 2 ? 'checked': '' }}"></span>
+                                    <span class="fa fa-star {{$review->rating >= 3 ? 'checked': '' }}"></span>
+                                    <span class="fa fa-star {{$review->rating >= 4 ? 'checked': '' }}"></span>
+                                    <span class="fa fa-star {{$review->rating >= 5 ? 'checked': '' }}"></span>
+                                </div>
+                            </div>
                            @php
                               $name = \App\Models\User::find($review->user_id); 
                            @endphp
                             <p style="font-weight: 900">{{$name?$name->firstname .' '.$name->lastname : '' }}</p>
                             <p>{{$review->review}}</p>
+                            </div>
                             @endforeach
                         </div>
                         <div class="col-md-4 rating-form">
@@ -510,7 +514,7 @@
                                     </label>
                                     <label>Feedback</label>
                                     <textarea class="form-control" name="review"></textarea>
-                                    <button class="btn btn-default mt-2" type="submit">Save</button>
+                                    <button class="btn btn-default mt-2" type="submit">Submit Review</button>
                                 </div>
                             </form>
                             @endguest
@@ -528,10 +532,20 @@
             $('.get-details').on('click', 'li', function() {
                 const data = $(this).attr('data-id');
                 const product = JSON.parse(data);
-
+                const url = "{{asset('/')}}";
                 $('.product-title').html(product.name);
                 $('.product-description').html(product.desc);
-                console.log(product);
+                $('.carousel-inner').html('');
+                var corousel_html = '';
+                product.get_product_images.forEach(function(item,index,arr){
+                if(index == 0)
+                {
+                corousel_html += '<div class="carousel-item active"><img class="d-block w-100" src="'+url+'assets/images/product/'+item.image_url+'"alt="First slide"></div>';
+                }else{
+                corousel_html += '<div class="carousel-item"><img class="d-block w-100" src="'+url+'assets/images/product/'+item.image_url+'"alt="First slide"></div>';
+                }
+                });
+                $('.carousel-inner').html(corousel_html);
             })
         })
     </script>
